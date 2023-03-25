@@ -59,12 +59,11 @@
     background-position: right bottom;
 }
 
-#how-it-work-section {
+#how-zippy-work {
     background-image: url("../public/assets/home/images/thread5-md.svg");
     background-repeat: no-repeat;
-    background-size: auto 104%;
-    background-position-x: right;
-    background-position-y: 10%;
+    background-size: auto 100%;
+    background-position: right top;
 }
 
 #how-zippy-help {

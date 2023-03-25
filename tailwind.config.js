@@ -43,10 +43,10 @@ module.exports = {
             },
         },
         screens: {
-            sm: { max: "500px" },
+            sm: { max: "600px" },
             // => @media (min-width: 640px and max-width: 767px) { ... }
 
-            md: { min: "501px", max: "768px" },
+            md: { min: "601px", max: "768px" },
             // => @media (min-width: 768px and max-width: 1023px) { ... }
 
             lg: { min: "769px", max: "1024px" },

@@ -11,115 +11,117 @@ import {
 
 export const HowItWorkSection = () => {
     return (
-        <section className="bg-[#F3F4FF]" id="how-zippy-work">
-            <Container>
-                <div className="pt-[10rem]">
-                    <Text variant="title">How it works</Text>
-                    <div className="flex sm:flex-wrap ">
-                        <div className="flex flex-wrap w-2/4  sm:w-full ">
-                            <div>
-                                <Text variant="header">
-                                    <p>
-                                        Connect your loyal customer community to
-                                        your business.
-                                    </p>
-                                </Text>
-                                <Text variant="text">
-                                    <p>
-                                        {" "}
-                                        Claim your business profile on
-                                        ZippyCrowd, share your work and watch
-                                        your community support you.
-                                    </p>
-                                </Text>
+        <section className="bg-[#F3F4FF] pt-[10rem] "  >
+            <div id="how-zippy-work"  >
+                <Container>
+                    <div  >
+                        <Text variant="title">How it works</Text>
+                        <div className="grid  grid-cols-2 sm:grid-cols-1 ">
+                            <div className="flex flex-wrap   sm:w-full ">
+                                <div>
+                                    <Text variant="header">
+                                        <p>
+                                            Connect your loyal customer community to
+                                            your business.
+                                        </p>
+                                    </Text>
+                                    <Text variant="text">
+                                        <p>
+                                            {" "}
+                                            Claim your business profile on
+                                            ZippyCrowd, share your work and watch
+                                            your community support you.
+                                        </p>
+                                    </Text>
+                                </div>
                             </div>
-                        </div>
-                        <div className=" flex items-center justify-center  ">
-                            <div className="relative w-[90%]">
-                                <img
-                                    src={FeatureImg1Front}
-                                    alt="front-feature-image"
-                                    className="absolute"
-                                />
-                                <img
-                                    src={FeatureImg1Back}
-                                    alt="back-feature-image"
-                                />
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div className="mt-[10rem]">
-                    <div className="flex sm:flex-wrap">
-                        <div className="flex w-2/4 flex-wrap sm:w-full  ">
-                            <div>
-                                <Text variant="header">
-                                    <p>
-                                        Get recommended by customers who trust
-                                        you and love your work.
-                                    </p>
-                                </Text>
-                                <Text variant="text">
-                                    <p>
-                                        Get notified every time you’re
-                                        recommended by your customer community
-                                        and win more business through word of
-                                        mouth that people trust.
-                                    </p>
-                                </Text>
-                            </div>
-                        </div>
-                        <div className=" flex items-center justify-center  ">
-                            <div className="relative w-[90%]">
-                                <img
-                                    src={FeatureImg2Front}
-                                    alt="front-feature-image"
-                                    className="absolute"
-                                />
-                                <img
-                                    src={FeatureImg2Back}
-                                    alt="back-feature-image"
-                                />
+                            <div className=" flex items-center justify-center  ">
+                                <div className="relative w-[90%]">
+                                    <img
+                                        src={FeatureImg1Front}
+                                        alt="front-feature-image"
+                                        className="absolute"
+                                    />
+                                    <img
+                                        src={FeatureImg1Back}
+                                        alt="back-feature-image"
+                                    />
+                                </div>
                             </div>
                         </div>
                     </div>
-                </div>
-                <div className="mt-[10rem]">
-                    <div className="flex sm:flex-wrap">
-                        <div className="flex flex-wrap w-2/4  sm:w-full ">
-                            <div>
-                                <Text variant="header">
-                                    <p>
-                                        Build trust and reputation that makes
-                                        you stand out.
-                                    </p>
-                                </Text>
-                                <Text variant="text">
-                                    <p>
-                                        {" "}
-                                        Claim your business profile on
-                                        ZippyCrowd, share your work and watch
-                                        your community support you..
-                                    </p>
-                                </Text>
+                    <div className="mt-[10rem]">
+                        <div className="grid  grid-cols-2 sm:grid-cols-1 ">
+                            <div className="flex  flex-wrap sm:w-full  ">
+                                <div>
+                                    <Text variant="header">
+                                        <p>
+                                            Get recommended by customers who trust
+                                            you and love your work.
+                                        </p>
+                                    </Text>
+                                    <Text variant="text">
+                                        <p>
+                                            Get notified every time you’re
+                                            recommended by your customer community
+                                            and win more business through word of
+                                            mouth that people trust.
+                                        </p>
+                                    </Text>
+                                </div>
                             </div>
-                        </div>
-                        <div className=" flex items-center justify-center ">
-                            <div className="relative">
-                                <img
-                                    src={FeatureImg3Front}
-                                    alt="feature-image-front"
-                                    className="absolute"
-                                />
-                                <img
-                                    src={FeatureImg3Back}
-                                    alt="feature-image-back"
-                                />
+                            <div className=" flex items-center justify-center  ">
+                                <div className="relative w-[90%]">
+                                    <img
+                                        src={FeatureImg2Front}
+                                        alt="front-feature-image"
+                                        className="absolute"
+                                    />
+                                    <img
+                                        src={FeatureImg2Back}
+                                        alt="back-feature-image"
+                                    />
+                                </div>
                             </div>
                         </div>
                     </div>
-                </div>
-            </Container>
-        </section>
+                    <div className="mt-[10rem]">
+                        <div className="grid  grid-cols-2 sm:grid-cols-1 ">
+                            <div className="flex flex-wrap  sm:w-full ">
+                                <div>
+                                    <Text variant="header">
+                                        <p>
+                                            Build trust and reputation that makes
+                                            you stand out.
+                                        </p>
+                                    </Text>
+                                    <Text variant="text">
+                                        <p>
+                                            {" "}
+                                            Claim your business profile on
+                                            ZippyCrowd, share your work and watch
+                                            your community support you..
+                                        </p>
+                                    </Text>
+                                </div>
+                            </div>
+                            <div className=" flex items-center justify-center ">
+                                <div className="relative">
+                                    <img
+                                        src={FeatureImg3Front}
+                                        alt="feature-image-front"
+                                        className="absolute"
+                                    />
+                                    <img
+                                        src={FeatureImg3Back}
+                                        alt="feature-image-back"
+                                    />
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </Container>
+            </div>
+        </section >
     )
 }
