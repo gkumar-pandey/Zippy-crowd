@@ -11,7 +11,7 @@ import styles from './navbar.module.css'
 export const Navbar = () => {
     const [showDrawer, setShowDrawer] = useState(false);
     const [showPriceModal, setShowPriceModal] = useState(false)
-    const [navbarShow, setNavbarShow] = useState(false)
+    const [navbarShow, setNavbarShow] = useState(true)
     const [prevScrollPos, setPrevScrollPos] = useState(0);
 
     const scrollToSection = (event: any) => {
@@ -27,23 +27,22 @@ export const Navbar = () => {
         setShowPriceModal(!showPriceModal)
     }
 
-    const handleScroll = () => {
-        const currentScrollPos = window.pageYOffset;
-        const visible = prevScrollPos > currentScrollPos;
-
-        setPrevScrollPos(currentScrollPos);
-        setNavbarShow(visible);
-
-        console.log(visible)
-    }
 
     useEffect(() => {
+        const handleScroll = () => {
+            const currentScrollPos = window.pageYOffset;
+            const visible = prevScrollPos > currentScrollPos;
+
+            setPrevScrollPos(currentScrollPos);
+            setNavbarShow(visible);
+        }
+
         window.addEventListener('scroll', handleScroll)
 
         return () => {
             window.removeEventListener('scroll', handleScroll)
         }
-    }, [])
+    }, [navbarShow, prevScrollPos])
 
     // console.log(styles.navbarAnimation)
 
