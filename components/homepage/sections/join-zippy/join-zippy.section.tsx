@@ -22,29 +22,29 @@ export const JoinZippy = () => {
             <Container>
                 <div
                     id="join-zippy-section"
-                    className=" h-[120vh] md:h-[100vh]  relative"
+                    className="pt-[100%] sm:p-0   relative sm:block "
                 >
-                    <div className=" ">
-                        <div className="absolute   md:left-0 md:bottom-[20%] md:w-1/4">
-                            <Image src={DogImg} alt="img-dog" />
+                    <div className="  mb-28">
+                        <div className="absolute top-[68%] sm:relative w-1/4 sm:w-3/4 sm:block sm:top-0 sm:mb-[40px] ">
+                            <img src={DogImg} alt="img-dog" className="" />
                         </div>
-                        <div className=" absolute right-[13%] top-[15%] md:right-0  md:top-[60%] sm:hidden ">
-                            <Image src={DecoratorImg} alt="decorator-img" />
+                        <div className="absolute w-[38%] right-[13%]  top-[7%] sm:relative sm:right-0 sm:block sm:w-3/4 sm:ml-[25%] sm:mb-[40px] ">
+                            <img src={BoxingImg} alt="boxing-img" />
                         </div>
-                        <div className="absolute right-[35%] top-[30%] w-[40%] md:top-[35%] md:right-[30%] md:w-[45%]  sm:top-[60%]  sm:right-2 sm:w-full ">
-                            <Image src={HairImg} alt="hair-cut-img" />
+                        <div className="absolute w-1/2 left-[25%] top-[36%] sm:relative  sm:block sm:w-[100%] sm:left-0  ">
+                            <img src={HairImg} alt="hair-cut-img" />
                         </div>
-                        <div className="absolute left-0 top-[65%] md:left-[40%] md:top-[70%] md:w-1/4  sm:hidden ">
-                            <Image src={BarberImg} alt="barber-img" />
+                        <div className="absolute top-0 left-0 w-1/4 md:left-0 md:top-0 sm:hidden ">
+                            <img src={GardenImg} alt="garden-img" />
                         </div>
-                        <div className="absolute  left-[33%] top-[67%] w-[30%] md:left-[60%] md:top-[5%] md:w-[40%]  sm:left-[20%] sm:w-[80%] sm:top-[30%] ">
-                            <Image src={BoxingImg} alt="boxing-img" />
+                        <div className="absolute w-1/4 left-[38%] top-[71%] md:left-[40%] md:top-[70%] md:w-1/4  sm:hidden ">
+                            <img src={BarberImg} alt="barber-img" />
                         </div>
-                        <div className="absolute top-[60%] left-[70%] w-[25%] md:left-0 md:top-0 sm:hidden ">
-                            <Image src={GardenImg} alt="garden-img" />
+                        <div className=" absolute w-1/4 left-3/4 top-[65%] md:right-0  md:top-[60%] sm:hidden ">
+                            <img src={DecoratorImg} alt="decorator-img" />
                         </div>
                     </div>
-                    <div className="flex justify-center absolute bottom-0 w-full">
+                    <div className=" flex justify-center  bottom-0  ">
                         <Link href={"https://app.zippycrowd.com/login"}>
                             <Button variant="filled">
                                 Join us on ZippyCrowd

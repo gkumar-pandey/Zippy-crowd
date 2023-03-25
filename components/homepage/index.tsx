@@ -17,9 +17,9 @@ export function HomePage() {
         <>
             <Navbar />
             <HeroSection />
-            {/* <MemberSection />
+            <MemberSection />
             <JoinZippy />
-            <HowItWorkSection />
+            {/* <HowItWorkSection />
             <YogaSection />
             <HowZippyHelpSection />
             <SignUpSection />
