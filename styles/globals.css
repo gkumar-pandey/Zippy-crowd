@@ -161,13 +161,13 @@
 
 @keyframes text-animation {
     0% {
-        content: "sole traders";
+        content: "sole traders.";
     }
     60% {
-        content: "Small businesses";
+        content: "small businesses.";
     }
     100% {
-        content: "freelancers";
+        content: "freelancers.";
     }
 }
 
