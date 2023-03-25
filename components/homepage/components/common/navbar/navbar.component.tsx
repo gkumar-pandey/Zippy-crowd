@@ -1,4 +1,4 @@
-import { useState } from "react"
+import { useEffect, useState } from "react"
 import Link from "next/link"
 import { Container } from "../../container/container.component"
 import { NavLink } from "../../primitive/nav-link/nav-link.component"
@@ -6,10 +6,13 @@ import { NavLogo } from "@/public"
 import { NavbarDrawer } from "./navbar-drawer.component"
 import { Modal } from "../../primitive/modal/modal.component"
 import { PricingModalContent } from "../../pricing-modal/pricing-modal.component"
+import styles from './navbar.module.css'
 
 export const Navbar = () => {
     const [showDrawer, setShowDrawer] = useState(false);
     const [showPriceModal, setShowPriceModal] = useState(false)
+    const [navbarShow, setNavbarShow] = useState(false)
+    const [prevScrollPos, setPrevScrollPos] = useState(0);
 
     const scrollToSection = (event: any) => {
         const targetElement: any = document.getElementById(event)
@@ -24,8 +27,28 @@ export const Navbar = () => {
         setShowPriceModal(!showPriceModal)
     }
 
+    const handleScroll = () => {
+        const currentScrollPos = window.pageYOffset;
+        const visible = prevScrollPos > currentScrollPos;
+
+        setPrevScrollPos(currentScrollPos);
+        setNavbarShow(visible);
+
+        console.log(visible)
+    }
+
+    useEffect(() => {
+        window.addEventListener('scroll', handleScroll)
+
+        return () => {
+            window.removeEventListener('scroll', handleScroll)
+        }
+    }, [])
+
+    // console.log(styles.navbarAnimation)
+
     return (
-        <div className=" bg-[#5c15ad] py-5 w-full fixed top-0 z-50 ">
+        <div className={`bg-[#5c15ad] py-5 w-full fixed top-0 z-50 ${navbarShow ? styles.navbar__visible : styles.navbarAnimation}   `} >
             <Container>
                 <nav className="  flex justify-between ">
                     <div className="my-auto">
