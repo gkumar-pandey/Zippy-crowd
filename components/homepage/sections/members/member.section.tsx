@@ -1,4 +1,3 @@
-import Image from "next/image"
 import { Container } from "../../components/container/container.component"
 import { Button } from "../../components/primitive/button/button.component"
 import { Text } from "../../components/primitive/text/text.component"
@@ -39,7 +38,7 @@ export const MemberSection = () => {
                     <div className="flex  justify-between px-2 pb-[4rem]">
                         <div className="w-1/4 sm:hidden">
                             <div className="  ">
-                                <Image
+                                <img
                                     src={PartyPopperSvg}
                                     alt="party-popper-svg"
                                     className=" w-1/2 mx-auto "
@@ -55,7 +54,7 @@ export const MemberSection = () => {
                         </div>
                     </div>
                     <div className=" pt-[5rem] mx-2">
-                        <Image src={HeartSvg} alt="heart-svg" />
+                        <img src={HeartSvg} alt="heart-svg" />
                     </div>
                 </div>
             </Container>
