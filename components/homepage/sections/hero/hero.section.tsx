@@ -69,6 +69,7 @@ export const HeroSection = () => {
                                     Reach new customers on the{" "}
                                     <strong>strength</strong> of your
                                 </span>
+                                <br />
                                 <strong> positive reputation.</strong>
                             </div>
                             <div className=" flex my-[2rem] gap-5">
