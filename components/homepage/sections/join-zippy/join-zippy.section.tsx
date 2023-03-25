@@ -16,7 +16,7 @@ import Image from "next/image"
 export const JoinZippy = () => {
     return (
         <section className=" gradient-top-to-bottom mt-02">
-            <div>
+            <div className="mt-[-20px]" >
                 <Wave2Top />
             </div>
             <Container>

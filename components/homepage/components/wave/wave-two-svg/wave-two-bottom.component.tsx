@@ -2,7 +2,7 @@ import { wave2BottomMd, wave2BottomXs, wave2BottomXl } from "@/public"
 
 export const Wave2Bottom = () => {
     return (
-        <div>
+        <div className="pt-2 mb-[-10px]" >
             <img
                 src={wave2BottomXl}
                 alt="wave2-bottom"

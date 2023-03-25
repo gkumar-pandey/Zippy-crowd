@@ -15,7 +15,7 @@ export const MemberSection = () => {
         "+more!",
     ]
     return (
-        <section className="pt-12 bg-[#F3F4FF] mt-02" id="member-section">
+        <section className="pt-12 pb-6 bg-[#F3F4FF] mt-02" id="member-section">
             <Container>
                 <div id="member-section">
                     <div>

@@ -2,7 +2,7 @@ import { wave1Xl, wave1md, wave1Xs } from "@/public"
 
 export const Wave1Top = () => {
     return (
-        <div>
+        <div   >
             <img
                 src={wave1Xl}
                 alt="wave-1-xl"

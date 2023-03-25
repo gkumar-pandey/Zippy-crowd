@@ -8,7 +8,6 @@ import {
     FeatureImg3Back,
     FeatureImg3Front,
 } from "@/public"
-import Image from "next/image"
 
 export const HowItWorkSection = () => {
     return (
@@ -37,12 +36,12 @@ export const HowItWorkSection = () => {
                         </div>
                         <div className=" flex items-center justify-center  ">
                             <div className="relative w-[90%]">
-                                <Image
+                                <img
                                     src={FeatureImg1Front}
                                     alt="front-feature-image"
                                     className="absolute"
                                 />
-                                <Image
+                                <img
                                     src={FeatureImg1Back}
                                     alt="back-feature-image"
                                 />
@@ -72,12 +71,12 @@ export const HowItWorkSection = () => {
                         </div>
                         <div className=" flex items-center justify-center  ">
                             <div className="relative w-[90%]">
-                                <Image
+                                <img
                                     src={FeatureImg2Front}
                                     alt="front-feature-image"
                                     className="absolute"
                                 />
-                                <Image
+                                <img
                                     src={FeatureImg2Back}
                                     alt="back-feature-image"
                                 />
@@ -107,12 +106,12 @@ export const HowItWorkSection = () => {
                         </div>
                         <div className=" flex items-center justify-center ">
                             <div className="relative">
-                                <Image
+                                <img
                                     src={FeatureImg3Front}
                                     alt="feature-image-front"
                                     className="absolute"
                                 />
-                                <Image
+                                <img
                                     src={FeatureImg3Back}
                                     alt="feature-image-back"
                                 />

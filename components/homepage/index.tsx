@@ -14,19 +14,19 @@ import {
 
 export function HomePage() {
     return (
-        <>
+        <div   >
             <Navbar />
             <HeroSection />
             <MemberSection />
             <JoinZippy />
-            {/* <HowItWorkSection />
-            <YogaSection />
+            <HowItWorkSection />
+            {/* <YogaSection />
             <HowZippyHelpSection />
             <SignUpSection />
             <AboutSection />
             <FAQSection />
             <CTA />
             <Footer /> */}
-        </>
+        </div>
     )
 }
