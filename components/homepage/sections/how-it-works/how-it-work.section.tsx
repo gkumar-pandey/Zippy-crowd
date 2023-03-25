@@ -11,7 +11,7 @@ import {
 
 export const HowItWorkSection = () => {
     return (
-        <section className="bg-[#F3F4FF] pt-[10rem] "  >
+        <section className="bg-[#F3F4FF] pt-[10rem] pb-11 "  >
             <div id="how-zippy-work"  >
                 <Container>
                     <div  >
