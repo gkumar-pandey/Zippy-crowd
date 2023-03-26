@@ -4,7 +4,7 @@ import { Button } from "../../components/primitive/button/button.component"
 import { Wave2Top } from "../../components/wave/wave-two-svg/wave-two-top.component"
 import { Wave2Bottom } from "../../components/wave/wave-two-svg/wave-two-bottom.component"
 import { YogaIllustration, QuoteImg } from "@/public"
-import Image from "next/image"
+
 
 export const YogaSection = () => {
     return (
@@ -14,16 +14,16 @@ export const YogaSection = () => {
             </div>
             <Container>
                 <div className="py-10">
-                    <div className="flex justify-between items-center   lg:flex-wrap-reverse md:flex-wrap-reverse sm:flex-wrap-reverse  ">
-                        <div className=" p-3  w-full lg:w-[100%] ">
-                            <div>
-                                <Image
+                    <div className="flex justify-between items-end  lg:flex-wrap-reverse md:flex-wrap-reverse sm:flex-wrap-reverse  ">
+                        <div className="lg:mx-auto lg:w-4/5  bottom-0  w-full   ">
+                            <div className="mt-[40px]" >
+                                <img
                                     src={QuoteImg}
                                     alt="quote-image"
                                     className="w-[3rem]"
                                 />
                             </div>
-                            <div>
+                            <div className="mb-[40px]" >
                                 <h1 className="text-3xl sm:text-2xl font-semibold font-sans text-[#fff] mb-5 leading-[3rem] ">
                                     {" "}
                                     <span className="text-teal">
@@ -44,11 +44,11 @@ export const YogaSection = () => {
                                 </Link>
                             </div>
                         </div>
-                        <div className=" w-full  ">
-                            <Image
+                        <div className="w-full px-5">
+                            <img
                                 src={YogaIllustration}
                                 alt="Yoga illustration"
-                                className="w-3/4  mx-auto"
+                                className="w-3/4 lg:w-2/4 sm:w-full md:w-3/5 mx-auto"
                             />
                         </div>
                     </div>
