@@ -8,7 +8,7 @@ import { CtaImg } from "@/public"
 
 export const CTA = () => {
     return (
-        <section className="gradient-top-to-bottom  relative ">
+        <section className="gradient-top-to-bottom pb-28 relative ">
             <div className="absolute w-full  ">
                 <Wave3Top />
             </div>
@@ -28,10 +28,10 @@ export const CTA = () => {
                     <div className="grid grid-cols-1 text-3xl sm:text-2xl  sm:w-full mt-8 mb-12   text-[#fff] font-semibold w-4/6  md:w-full leading-[3rem] ">
                         <p>
                             The more people who{" "}
-                            <span className="text-teal">trust</span> you and{" "}
-                            <span className="text-teal">recommend</span>{" "}
+                            <span className="text-[#a8e6d7]">trust</span> you and{" "}
+                            <span className="text-[#a8e6d7]">recommend</span>{" "}
                             your work,{" "}
-                            <span className="text-teal">
+                            <span className="text-[#a8e6d7]">
                                 the more discoverable you become.
                             </span>
                         </p>

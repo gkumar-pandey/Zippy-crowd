@@ -3,12 +3,12 @@ import { Text } from "../../components/primitive/text/text.component"
 
 export const HowZippyHelpSection = () => {
     return (
-        <section className="bg-[#F3F4FF] pt-[5rem] mt-02 " id="how-zippy-help">
+        <section className="bg-[#F3F4FF] pt-40 mt-02 " >
             <Container>
-                <div id="how-zippy-help" className=" pb-[10rem]">
+                <div id="how-zippy-help" className="pb-[10rem]">
                     <Text variant="title">how zippy helps</Text>
-                    <div>
-                        <div className=" w-3/5  mb-[151px] sm:w-full ">
+                    <div className="flex flex-col " >
+                        <div className=" mb-[98px] w-3/5  sm:w-full ">
                             <Text variant="header">
                                 <p>
                                     A customer community you trust and can rely
@@ -24,7 +24,7 @@ export const HowZippyHelpSection = () => {
                                 </p>
                             </Text>
                         </div>
-                        <div className=" w-3/5 p-2 sm:w-full ">
+                        <div className="  w-3/5   p-2 sm:w-full ">
                             <Text variant="header">
                                 <p>
                                     Recommendations that power your business. No

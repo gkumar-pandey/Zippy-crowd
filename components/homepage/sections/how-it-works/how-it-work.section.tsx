@@ -7,14 +7,16 @@ import {
     FeatureImg2Front,
     FeatureImg3Back,
     FeatureImg3Front,
+    HeartSvg
 } from "@/public"
+
 
 export const HowItWorkSection = () => {
     return (
         <section className="bg-[#F3F4FF] pt-[10rem] pb-11 "  >
-            <div id="how-zippy-work"  >
+            <div id="how-zippy-work">
                 <Container>
-                    <div  >
+                    <div>
                         <Text variant="title">How it works</Text>
                         <div className="grid  grid-cols-2 sm:grid-cols-1 ">
                             <div className="flex flex-wrap   sm:w-full ">
@@ -120,8 +122,14 @@ export const HowItWorkSection = () => {
                             </div>
                         </div>
                     </div>
+
                 </Container>
             </div>
+            <Container>
+                <div className=" relative  " >
+                    <img src={HeartSvg} alt="heart-svg-img" className="absolute left-5 w-11 h-11" />
+                </div>
+            </Container>
         </section >
     )
 }
