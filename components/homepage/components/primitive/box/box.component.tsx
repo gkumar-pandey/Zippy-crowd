@@ -1,5 +1,4 @@
 import { BeakSvg } from "@/public"
-import Image from "next/image"
 import {
     ansWrapper,
     beakSvgStyle,
@@ -10,14 +9,19 @@ import {
 interface BoxProps {
     children: React.ReactNode
     variant: string
+    onClick?: any;
+    activeQuestion?: any;
+    idx?: any;
 }
 
-export const Box = ({ children, variant }: BoxProps) => {
+export const Box = ({ children, variant, onClick, activeQuestion, idx }: BoxProps) => {
+    let isActive = activeQuestion == idx
+    console.log(isActive)
     if (variant == "ansbox") {
         return (
-            <div className={ansWrapper}>
+            <div className={`${ansWrapper}`}>
                 <div className="ans-container relative">
-                    <Image
+                    <img
                         src={BeakSvg}
                         alt="beak-image"
                         className={beakSvgStyle}
@@ -32,7 +36,7 @@ export const Box = ({ children, variant }: BoxProps) => {
         return (
             <div className={questionContainerStyle}>
                 <div>
-                    <button className={quesWrapperStyle}>{children}</button>
+                    <button className={`${quesWrapperStyle} ${isActive && ' bg-[#3be0ca] '}`} onClick={onClick} >{children}</button>
                 </div>
             </div>
         )

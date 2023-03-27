@@ -53,7 +53,9 @@ const faqData = [
 ]
 
 export const FAQSection = () => {
-    const [activeQuestion, setActiveQuestion] = useState(null)
+    const [activeQuestion, setActiveQuestion] = useState(null);
+    const [isActive, setIsActive] = useState(false)
+
     const onClickHandler = (idx: any) => {
         setActiveQuestion(idx == activeQuestion ? null : idx)
     }
@@ -68,17 +70,16 @@ export const FAQSection = () => {
                                 className="flex justify-between md:flex-wrap sm:flex-wrap"
                                 key={index}
                             >
-                                <Box variant="question">
-                                    <div onClick={() => onClickHandler(index)}>
+                                <Box variant="question" onClick={() => onClickHandler(index)} idx={index} activeQuestion={activeQuestion}  >
+                                    <div >
                                         {question}
                                     </div>
                                 </Box>
                                 <div
-                                    className={`${
-                                        activeQuestion === index
-                                            ? "block"
-                                            : "hidden"
-                                    }`}
+                                    className={`${activeQuestion === index
+                                        ? "block"
+                                        : "hidden"
+                                        }`}
                                 >
                                     <Box variant="ansbox">{answer}</Box>
                                 </div>
