@@ -14,31 +14,29 @@ export const CTA = () => {
             </div>
             <Container>
                 <div className="relative w-5/6 mx-auto md:w-full sm:w-full 2xl:w-full ">
-                    <div className="flex justify-center sm:flex-wrap  md:mt-[4rem] xl:mt-[3rem] 2xl:mt-[5rem] ">
-                        <div className=" 2xl:w-4/5 ">
-                            <Image src={CtaImg} alt="cta-image" />
+                    <div className="grid grid-cols-2 sm:grid-cols-1 ">
+                        <div>
+                            <img src={CtaImg} alt="cta-image" />
                         </div>
-                        <div className=" flex items-center md:pt-10 text-lg text-[#fff]  sm:justify-start justify-center  w-full ">
-                            <p className="w-2/4  sm:w-3/4  ">
+                        <div className="mt-[200px] sm:mt-10">
+                            <p className=" sm:w-4/6 sm:mx-0 mx-auto w-2/5 md:w-4/6 leading-8 ">
                                 It’s not what you know, nor who you know, but
                                 who knows you.
                             </p>
                         </div>
                     </div>
-                    <div className="my-3  ">
-                        <div className=" text-3xl sm:text-2xl  sm:w-full sm:my-[2rem] text-[#fff] font-semibold w-4/6  md:w-full leading-[3rem] ">
-                            <p>
-                                The more people who{" "}
-                                <span className="text-teal">trust</span> you and{" "}
-                                <span className="text-teal">recommend</span>{" "}
-                                your work,{" "}
-                                <span className="text-teal">
-                                    the more discoverable you become.
-                                </span>
-                            </p>
-                        </div>
+                    <div className="grid grid-cols-1 text-3xl sm:text-2xl  sm:w-full mt-8 mb-12   text-[#fff] font-semibold w-4/6  md:w-full leading-[3rem] ">
+                        <p>
+                            The more people who{" "}
+                            <span className="text-teal">trust</span> you and{" "}
+                            <span className="text-teal">recommend</span>{" "}
+                            your work,{" "}
+                            <span className="text-teal">
+                                the more discoverable you become.
+                            </span>
+                        </p>
                     </div>
-                    <div className="py-[2rem]  md:text-center ">
+                    <div className="md:text-center ">
                         <Button variant="filled">
                             <Link href={"https://app.zippycrowd.com/login"}>
                                 Get Started
