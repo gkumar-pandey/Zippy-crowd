@@ -24,30 +24,37 @@ import Link from "next/link"
 
 const faqData = [
     {
+        id: 1,
         question: <QuestionOne />,
         answer: <AnswerOne />,
     },
     {
+        id: 2,
         question: <QuestionTwo />,
         answer: <AnswerTwo />,
     },
     {
+        id: 3,
         question: <QuestionThree />,
         answer: <AnswerThree />,
     },
     {
+        id: 4,
         question: <QuestionFour />,
         answer: <AnswerFour />,
     },
     {
+        id: 5,
         question: <QuestionFive />,
         answer: <AnswerFive />,
     },
     {
+        id: 6,
         question: <QuestionSix />,
         answer: <AnswerSix />,
     },
     {
+        id: 7,
         question: <QuestionSeven />,
         answer: <AnswerSeven />,
     },
@@ -60,12 +67,12 @@ export const FAQSection = () => {
         setActiveQuestion(idx == activeQuestion ? null : idx)
     }
     return (
-        <section className=" py-[3rem] ">
+        <section className="py-[3rem]" id="faq-section">
             <Container>
                 <div>
                     <Text variant="title">frequently asked questions</Text>
                     <div className="pb-[2rem] md:flex-wrap sm:flex-wrap relative border-b-4 border-[#E188AF]">
-                        {faqData.map(({ question, answer }, index) => (
+                        {faqData.map(({ question, answer, id }, index) => (
                             <div
                                 className="flex justify-between md:flex-wrap sm:flex-wrap"
                                 key={index}
