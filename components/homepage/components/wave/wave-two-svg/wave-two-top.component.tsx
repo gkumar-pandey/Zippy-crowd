@@ -6,17 +6,17 @@ export const Wave2Top = () => {
             <img
                 src={wave2TopXl}
                 alt="wave2-top"
-                className="sm:hidden md:hidden  w-full  "
+                className="hidden xl:block 2xl:block w-full  "
             />
             <img
                 src={wave2TopMd}
                 alt="wave2-top-md"
-                className="lg:hidden xl:hidden sm:hidden 2xl:hidden w-full"
+                className="hidden lg:block md:block w-full"
             />
             <img
                 src={wave2TopXs}
                 alt="wave2-top-xs"
-                className="lg:hidden xl:hidden md:hidden 2xl:hidden w-full "
+                className="hidden sm:block w-full "
             />
         </div>
     )
