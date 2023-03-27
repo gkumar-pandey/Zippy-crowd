@@ -1,15 +1,15 @@
 import { IconExternalLink } from "@/public"
-import Image from "next/image"
 
 interface LinkCellProps {
-    children: React.ReactNode
+    children: React.ReactNode;
+    type: string;
 }
 
-export const FooterLink = ({ children }: LinkCellProps) => {
+export const FooterLink = ({ children, type }: LinkCellProps) => {
     return (
-        <div className="flex p-2 gap-1">
-            <div className="hover:text-[#ccd0d5] text-base ">{children}</div>
-            <Image src={IconExternalLink} alt="external-link" />
+        <div className="flex items-center py-2  gap-1">
+            <div className="hover:text-[#ccd0d5] text-base cursor-pointer ">{children}</div>
+            {type == "external" && <img src={IconExternalLink} alt="external-link" className="w-3 h-3 " />}
         </div>
     )
 }
