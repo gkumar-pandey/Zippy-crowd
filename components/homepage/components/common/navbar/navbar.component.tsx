@@ -44,13 +44,12 @@ export const Navbar = () => {
         }
     }, [navbarShow, prevScrollPos])
 
-    // console.log(styles.navbarAnimation)
 
     return (
         <div className={`bg-[#5c15ad] py-5 w-full fixed top-0 z-50 ${navbarShow ? styles.navbar__visible : styles.navbarAnimation}   `} >
             <Container>
                 <nav className="  flex justify-between ">
-                    <div className="my-auto">
+                    <div className="my-auto cursor-pointer ">
                         <img src={NavLogo} alt="zippy-nav-logo" />
                     </div>
                     <div className="flex justify-between text-white py-1 gap-x-[30px] md:hidden sm:hidden">
@@ -93,7 +92,7 @@ export const Navbar = () => {
                                 </Link>
                             </NavLink>
                         </div>
-                        <button className="bg-[#85fad7] rounded text-sm font-semibold  text-[#000] py-[6px] px-[19px] md:hidden sm:hidden">
+                        <button className="bg-[#85fad7] rounded text-sm font-semibold  text-[#000] py-[6px] px-[19px] md:hidden sm:hidden hover:transform hover:-translate-y-0.5 hover:shadow-xl ">
                             <Link
                                 href={"https://app.zippycrowd.com/home/control"}
                             >
@@ -101,7 +100,7 @@ export const Navbar = () => {
                             </Link>
                         </button>
                         <button
-                            className="border-2 text-[#85fad7] hidden font-sans font-semibold text-sm py-1 px-4 rounded md:block sm:block"
+                            className="border-2 text-[#85fad7] hidden font-sans font-semibold text-sm py-1 px-4 rounded md:block sm:block  "
                             onClick={onClick}
                         >
                             {showDrawer ? "Close Menu" : "Menu"}
