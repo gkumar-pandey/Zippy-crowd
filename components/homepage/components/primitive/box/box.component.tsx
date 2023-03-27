@@ -16,7 +16,7 @@ interface BoxProps {
 
 export const Box = ({ children, variant, onClick, activeQuestion, idx }: BoxProps) => {
     let isActive = activeQuestion == idx
-    console.log(isActive)
+
     if (variant == "ansbox") {
         return (
             <div className={`${ansWrapper}`}>
@@ -26,7 +26,7 @@ export const Box = ({ children, variant, onClick, activeQuestion, idx }: BoxProp
                         alt="beak-image"
                         className={beakSvgStyle}
                     />
-                    <div className="border border-green rounded-md p-2">
+                    <div className="border border-[#3be0ca] rounded-md p-2">
                         {children}
                     </div>
                 </div>

@@ -64,7 +64,7 @@ export const FAQSection = () => {
             <Container>
                 <div>
                     <Text variant="title">frequently asked questions</Text>
-                    <div className="pb-[2rem] md:flex-wrap sm:flex-wrap relative border-b-4 border-pink">
+                    <div className="pb-[2rem] md:flex-wrap sm:flex-wrap relative border-b-4 border-[#E188AF]">
                         {faqData.map(({ question, answer }, index) => (
                             <div
                                 className="flex justify-between md:flex-wrap sm:flex-wrap"
