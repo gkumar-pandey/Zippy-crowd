@@ -13,6 +13,7 @@ export const wave3TopXs = "/assets/home/images/wave3-top-xs.svg"
 export const wav3BottomXl = "/assets/home/images/wave3-bottom-xl.svg"
 export const wave3BottomMd = "/assets/home/images/wave3-bottom-md.svg"
 export const wave3BottomXs = "/assets/home/images/wave3-bottom-xs.svg"
+// wave svg
 export const celebrateSvg = "/assets/home/navbar/img-celebrate.svg"
 export const handShakeSvg = "/assets/home/navbar/img-handshake.svg"
 export const NavLogo = "/assets/home/navbar/logo.svg"
@@ -39,11 +40,13 @@ export const HairIllustration = "/assets/home/images/img-illustration-hair.png"
 export const HairImg = "/assets/home/images/img-hair.png"
 export const PartyPopperSvg = "/assets/home/images/party-pooper.svg"
 export const LogoImg = "/assets/home/images/img-logo.svg"
-export const FbIconSvg = "/assets/home/icons/icons8-facebook-48.svg"
-export const instagramIconSvg = "/assets/home/icons/icons8-instagram-48.svg"
-export const linkedinIconSvg = "/assets/home/icons/icons8-linkedin-48.svg"
-export const twitterIconSvg = "/assets/home/icons/icons8-twitter-48.svg"
 export const FooterLogo = "/assets/home/images/img-footer-logo.svg"
 export const QuoteImg = "/assets/home/images/img-quotes.svg"
 export const CloseSvg = "/assets/home/icons/close.svg"
 export const SpeechHeart = "/assets/home/icons/img-speechheart.svg"
+
+// Social Icons 
+export const FacebookIcon = "/assets/home/icons/facebook.svg"
+export const TwitterIcon = '/assets/home/icons/twitter.svg'
+export const LinkedinIcon = '/assets/home/icons/linkedin.svg'
+export const InstagramIcon = '/assets/home/icons/instagram.svg'

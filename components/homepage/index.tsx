@@ -20,13 +20,13 @@ export function HomePage() {
             <MemberSection />
             <JoinZippy />
             <HowItWorkSection />
-            {/* <YogaSection />
+            <YogaSection />
             <HowZippyHelpSection />
             <SignUpSection />
             <AboutSection />
             <FAQSection />
             <CTA />
-            <Footer /> */}
+            <Footer />
         </div>
     )
 }
