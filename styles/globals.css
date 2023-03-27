@@ -253,9 +253,9 @@
 
 /* CSS For md devices End*/
 
-/* CSS for xs Devices Start */
+/* CSS for sm Devices Start */
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 600px) {
     #member-section {
         /* border: 1px solid red; */
         background-image: url("../public/assets/home/images/thread2-xs.svg");
@@ -266,6 +266,13 @@
     #join-zippy-section {
         background-image: url("../public/assets/home/images/thread2-xs.svg");
     }
+    .footer-bg-img {
+        background-position: right bottom 200px;
+        background-size: auto calc(100% - 200px);
+        background-image: url("../public/assets/home/images/aubergine.svg");
+        background-repeat: no-repeat;
+        background-repeat: no-repeat;
+    }
 }
 
-/* CSS for xs Devices End */
+/* CSS for sm Devices End */
