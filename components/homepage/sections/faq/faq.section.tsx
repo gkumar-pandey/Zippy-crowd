@@ -20,6 +20,7 @@ import {
 } from "../../components/faq/ans.component"
 import { Box, Text } from "../../components"
 import { Container } from "../../components/container/container.component"
+import Link from "next/link"
 
 const faqData = [
     {
@@ -54,7 +55,6 @@ const faqData = [
 
 export const FAQSection = () => {
     const [activeQuestion, setActiveQuestion] = useState(null);
-    const [isActive, setIsActive] = useState(false)
 
     const onClickHandler = (idx: any) => {
         setActiveQuestion(idx == activeQuestion ? null : idx)
@@ -64,7 +64,7 @@ export const FAQSection = () => {
             <Container>
                 <div>
                     <Text variant="title">frequently asked questions</Text>
-                    <div className="mx-3.5 pb-[2rem] md:flex-wrap sm:flex-wrap relative border-b-4 border-pink">
+                    <div className="pb-[2rem] md:flex-wrap sm:flex-wrap relative border-b-4 border-pink">
                         {faqData.map(({ question, answer }, index) => (
                             <div
                                 className="flex justify-between md:flex-wrap sm:flex-wrap"
@@ -89,12 +89,16 @@ export const FAQSection = () => {
                 </div>
             </Container>
             <Container>
-                <div className="mx-3.5 py-[2rem]">
+                <div className="py-[2rem]">
                     <p className="mb-2">
-                        Got a question? <button>Get in touch</button>
+                        Got a question? <Link href='https://blog.zippycrowd.com/contact-us/' target='_blank' >
+                            <button>Get in touch</button>
+                        </Link>
                     </p>
                     <p>
-                        Ready to join us on ZippyCrowd? <button>Join us</button>{" "}
+                        Ready to join us on ZippyCrowd? <Link href='https://app.zippycrowd.com/login' >
+                            <button>Join us</button>
+                        </Link>
                     </p>
                 </div>
             </Container>
