@@ -14,7 +14,7 @@ import {
 
 export function HomePage() {
     return (
-        <div   >
+        <div>
             <Navbar />
             <HeroSection />
             <MemberSection />

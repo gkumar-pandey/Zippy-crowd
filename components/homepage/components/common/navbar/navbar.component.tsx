@@ -1,12 +1,12 @@
 import { useEffect, useState } from "react"
 import Link from "next/link"
+import styles from './navbar.module.css'
 import { Container } from "../../container/container.component"
 import { NavLink } from "../../primitive/nav-link/nav-link.component"
 import { NavLogo } from "@/public"
 import { NavbarDrawer } from "./navbar-drawer.component"
 import { Modal } from "../../primitive/modal/modal.component"
 import { PricingModalContent } from "../../pricing-modal/pricing-modal.component"
-import styles from './navbar.module.css'
 
 export const Navbar = () => {
     const [showDrawer, setShowDrawer] = useState(false);

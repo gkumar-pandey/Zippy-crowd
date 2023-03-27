@@ -1,10 +1,10 @@
 import Link from "next/link"
+import { useState } from "react"
 import { Container } from "../../components/container/container.component"
 import { HeroArrowSvg, HeroImg } from "@/public"
 import { Wave1Top } from "../../components/wave/wave-one-svg/wave-one-top.component"
 import { Button } from "../../components/primitive/button/button.component"
 import { Modal } from "../../components/primitive/modal/modal.component"
-import { useState } from "react"
 import { Text } from "../../components/primitive/text/text.component"
 import { YouTubeVideo } from "../../components/primitive/youtube-video/youtube-video.component"
 

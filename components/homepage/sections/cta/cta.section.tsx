@@ -1,5 +1,4 @@
 import Link from "next/link"
-import Image from "next/image"
 import { Container } from "../../components/container/container.component"
 import { Wave3Top } from "../../components/wave/wave-three-svg/wave-three-top.component"
 import { Wave3Bottom } from "../../components/wave/wave-three-svg/wave-three-bottom.component"
