@@ -36,7 +36,7 @@ export const Box = ({ children, variant, onClick, activeQuestion, idx }: BoxProp
         return (
             <div className={questionContainerStyle}>
                 <div>
-                    <button className={`${quesWrapperStyle} ${isActive && ' bg-[#3be0ca] '}`} onClick={onClick} >{children}</button>
+                    <button className={`${isActive ? ' bg-[#3be0ca] ' : 'bg-[#e9e9ed]'} ${quesWrapperStyle}  `} onClick={onClick} >{children}</button>
                 </div>
             </div>
         )
