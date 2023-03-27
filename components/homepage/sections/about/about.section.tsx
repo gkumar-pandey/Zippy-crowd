@@ -1,7 +1,7 @@
 import { Container } from "../../components/container/container.component"
 import { Text } from "../../components/primitive/text/text.component"
 import { LogoImg } from "@/public"
-import Image from "next/image"
+import Link from "next/link"
 
 export const AboutSection = () => {
     return (
@@ -9,9 +9,10 @@ export const AboutSection = () => {
             <div className="py-[10rem]">
                 <Container>
                     <Text variant="title">About us</Text>
-                    <div className="flex justify-between sm:flex-col ">
-                        <div className="w-3/6 pr-4  md:w-2/4 md:p-0 sm:w-full ">
-                            <div>
+                    <div className=" grid grid-cols-2 gap-2 sm:grid-cols-1 ">
+                        <div>
+
+                            <div   >
                                 <Text variant="header">
                                     <p>
                                         We believe in the power of word of
@@ -19,7 +20,7 @@ export const AboutSection = () => {
                                     </p>
                                 </Text>
                             </div>
-                            <div>
+                            <div   >
                                 <Text variant="text">
                                     <p>
                                         We’re on a mission to bring more trust
@@ -28,7 +29,7 @@ export const AboutSection = () => {
                                     </p>
                                 </Text>
                             </div>
-                            <div>
+                            <div   >
                                 <Text variant="text">
                                     <p>
                                         We built ZippyCrowd to help small
@@ -38,13 +39,15 @@ export const AboutSection = () => {
                                 </Text>
                             </div>
                             <div>
-                                <div className="mx-2 ">
-                                    <button>Learn more about us</button>
+                                <div>
+                                    <Link href={' https:/blog.zippycrowd.com/about-us/'} target='_blank' >
+                                        <button>Learn more about us</button>
+                                    </Link>
                                 </div>
                             </div>
                         </div>
-                        <div className="flex justify-center items-center p-4  w-2/5   md:w-2/4  sm:w-full ">
-                            <Image
+                        <div className="flex  justify-center items-center p-4  sm:w-full sm:mt-12 ">
+                            <img
                                 src={LogoImg}
                                 alt="logo-image"
                                 className="w-full"

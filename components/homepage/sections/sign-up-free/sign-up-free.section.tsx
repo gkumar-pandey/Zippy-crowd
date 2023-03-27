@@ -9,7 +9,7 @@ import { HairIllustration } from "@/public"
 import { Modal } from "../../components/primitive/modal/modal.component"
 import { Text } from "../../components/primitive/text/text.component"
 import { YouTubeVideo } from "../../components/primitive/youtube-video/youtube-video.component"
-import Image from "next/image"
+
 
 export const SignUpSection = () => {
     const [isModalOpen, setIsModalOpen] = useState(false)
@@ -28,17 +28,17 @@ export const SignUpSection = () => {
                     <YouTubeVideo />
                 </div>
             </Modal>
-            <div className="  ">
+            <div>
                 <Wave2Top />
             </div>
 
             <div className="py-10">
                 <Container>
-                    <div className="   ">
-                        <div className="flex justify-between items-center  lg:flex-wrap-reverse md:flex-wrap-reverse sm:flex-wrap-reverse ">
-                            <div className=" px-3 md:w-4/5 md:mx-auto   w-full lg:w-3/4 lg:mx-auto py-3  ">
+                    <div>
+                        <div className=" flex lg:flex-wrap-reverse md:flex-wrap-reverse sm:flex-wrap-reverse ">
+                            <div className="px-3 md:w-4/5   md:mx-auto   w-full lg:w-3/4 lg:mx-auto py-3  ">
                                 <div>
-                                    <h1 className="text-3xl sm:text-2xl font-semibold font-sans text-[#fff] leading-[3rem] ">
+                                    <h1 className="text-3xl  mb-2 2xl:w-4/5 md:w-11/12 sm:text-2xl font-semibold font-sans text-[#fff] leading-[3rem] ">
                                         {" "}
                                         <span className="text-teal">
                                             Build business{" "}
@@ -58,7 +58,7 @@ export const SignUpSection = () => {
                                         Not the size of your marketing budget.
                                     </p>
                                 </div>
-                                <div className="mt-[3rem] flex sm:flex-col gap-[40px]  ">
+                                <div className="mt-10  flex sm:flex-col gap-[32px]  ">
                                     <Link
                                         href={
                                             "https://app.zippycrowd.com/login"
@@ -78,8 +78,8 @@ export const SignUpSection = () => {
                                     </div>
                                 </div>
                             </div>
-                            <div className=" w-full  ">
-                                <Image
+                            <div className=" w-full p-5 ">
+                                <img
                                     src={HairIllustration}
                                     alt="Yoga illustration"
                                     className=" w-2/3 lg:w-2/4 mx-auto"
