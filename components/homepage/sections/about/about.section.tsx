@@ -9,10 +9,9 @@ export const AboutSection = () => {
             <div className="py-[10rem]">
                 <Container>
                     <Text variant="title">About us</Text>
-                    <div className=" grid grid-cols-2 gap-2 sm:grid-cols-1 ">
+                    <div className="grid grid-cols-2 gap-2 sm:grid-cols-1 ">
                         <div>
-
-                            <div   >
+                            <div>
                                 <Text variant="header">
                                     <p>
                                         We believe in the power of word of
@@ -46,11 +45,11 @@ export const AboutSection = () => {
                                 </div>
                             </div>
                         </div>
-                        <div className="flex  justify-center items-center p-4  sm:w-full sm:mt-12 ">
+                        <div className="flex justify-end sm:justify-center items-center p-4  sm:w-full sm:mt-12 ">
                             <img
                                 src={LogoImg}
                                 alt="logo-image"
-                                className="w-full"
+                                className="w-3/4"
                             />
                         </div>
                     </div>

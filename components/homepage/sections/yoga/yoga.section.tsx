@@ -39,7 +39,7 @@ export const YogaSection = () => {
                             <div>
                                 <Link href={"https://app.zippycrowd.com/login"}>
                                     <Button variant="filled">
-                                        Get started
+                                        Get Started
                                     </Button>
                                 </Link>
                             </div>
