@@ -78,7 +78,7 @@ export const HeroSection = () => {
                                 </Button>
                                 <Link href={"https://app.zippycrowd.com/login"}>
                                     <Button variant="outlined">
-                                        Get Started
+                                        Get started
                                     </Button>
                                 </Link>
                             </div>

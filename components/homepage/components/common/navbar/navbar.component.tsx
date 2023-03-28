@@ -96,7 +96,7 @@ export const Navbar = () => {
                             <Link
                                 href={"https://app.zippycrowd.com/home/control"}
                             >
-                                Get Started
+                                Get started
                             </Link>
                         </button>
                         <button

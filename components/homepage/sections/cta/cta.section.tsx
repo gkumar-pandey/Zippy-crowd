@@ -38,7 +38,7 @@ export const CTA = () => {
                     <div className="md:text-center ">
                         <Button variant="filled">
                             <Link href={"https://app.zippycrowd.com/login"}>
-                                Get Started
+                                Get started
                             </Link>
                         </Button>
                     </div>

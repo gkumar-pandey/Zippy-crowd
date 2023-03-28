@@ -111,7 +111,7 @@ export const Footer = () => {
                             <div className="flex gap-10">
                                 <Link href={"https://app.zippycrowd.com/login"}>
                                     <Button variant="filled">
-                                        Get Started
+                                        Get started
                                     </Button>
                                 </Link>
                                 <Link href={"https://app.zippycrowd.com/login"}>
