@@ -40,15 +40,15 @@ export const SignUpSection = () => {
                                 <div>
                                     <h1 className="text-3xl  mb-2 2xl:w-4/5 md:w-11/12 sm:text-2xl font-semibold font-sans text-[#fff] leading-[3rem] ">
                                         {" "}
-                                        <span className="text-teal">
+                                        <span className="text-[#a8e6d7]">
                                             Build business{" "}
                                         </span>
                                         on the{" "}
-                                        <span className="text-teal">
+                                        <span className="text-[#a8e6d7]">
                                             strength{" "}
                                         </span>{" "}
                                         of your{" "}
-                                        <span className="text-teal">
+                                        <span className="text-[#a8e6d7]">
                                             reputation.
                                         </span>
                                     </h1>

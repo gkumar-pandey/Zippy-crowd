@@ -26,11 +26,11 @@ export const YogaSection = () => {
                             <div className="mb-[40px]" >
                                 <h1 className="text-3xl sm:text-2xl font-semibold font-sans text-[#fff] mb-5 leading-[3rem] ">
                                     {" "}
-                                    <span className="text-teal">
+                                    <span className="text-[#a8e6d7]">
                                         Word of mouth{" "}
                                     </span>
                                     is the{" "}
-                                    <span className="text-teal">
+                                    <span className="text-[#a8e6d7]">
                                         most powerful
                                     </span>{" "}
                                     way to grow your small business.
