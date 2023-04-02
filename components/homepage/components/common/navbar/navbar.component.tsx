@@ -64,7 +64,7 @@ export const Navbar = () => {
                                     scrollToSection("how-zippy-work")
                                 }
                             >
-                                How Zippy Works
+                                How Zippy works
                             </p>
                         </NavLink>
                         <NavLink>
