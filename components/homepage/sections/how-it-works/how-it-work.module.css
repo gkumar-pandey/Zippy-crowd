@@ -1,0 +1,22 @@
+.howItWork {
+    background-image: url("../../../../public/assets/home/images/thread5-md.svg");
+    background-repeat: no-repeat;
+    background-size: auto 100%;
+    background-position: right top;
+    margin-top: 218px;
+    padding-bottom: 111px;
+}
+
+@media screen and (max-width: 1024px) {
+    .howItWork {
+        margin-top: 169px;
+        padding-bottom: 46px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .howItWork {
+        margin-top: 158px;
+        padding-bottom: 122px;
+    }
+}
