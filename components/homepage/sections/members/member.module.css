@@ -1,0 +1,36 @@
+.member::after {
+    content: "";
+    position: absolute;
+    left: 10px;
+    bottom: 0;
+    width: 42px;
+    height: 42px;
+    background-image: url("../../../../public/assets/home/images/heart.svg");
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.memberSection {
+    background-image: url("../../../../public/assets/home/images/thread2-md.svg");
+    background-repeat: no-repeat;
+    background-size: auto 100%;
+    background-position: right top;
+    padding-bottom: 148px;
+}
+
+@media screen and (max-width: 1024px) {
+    .memberSection {
+        padding-bottom: 269px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .memberSection {
+        background-image: url("../../../../public/assets/home/images/thread2-xs.svg");
+        background-repeat: no-repeat;
+        background-size: auto 100%;
+        background-position: right top;
+        padding-bottom: 160px;
+    }
+}
