@@ -54,7 +54,7 @@ const TextImgContainer = ({ boldText, normalText, image, backImage }: TextProps)
 
 export const HowItWorkSection = () => {
     return (
-        <section className="bg-[#F3F4FF]  pb-11 border border-white "  >
+        <section className="bg-[#F3F4FF] relative border border-[#F3F4FF] "  >
             <div className={styles.howItWork} >
                 <Container>
                     <div>
@@ -73,8 +73,8 @@ export const HowItWorkSection = () => {
                 </Container>
             </div>
             <Container>
-                <div className=" relative  " >
-                    <img src={HeartSvg} alt="heart-svg-img" className="absolute left-5 w-11 h-11" />
+                <div className={styles.heartSvg} >
+
                 </div>
             </Container>
         </section >
