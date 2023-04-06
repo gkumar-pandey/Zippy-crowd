@@ -13,9 +13,9 @@ export const YogaSection = () => {
                 <Wave2Top />
             </div>
             <Container>
-                <div className="py-10">
+                <div className="pt-20">
                     <div className="flex justify-between items-end  lg:flex-wrap-reverse md:flex-wrap-reverse sm:flex-wrap-reverse  ">
-                        <div className="lg:mx-auto lg:w-4/5  bottom-0  w-full   ">
+                        <div className="lg:mx-auto lg:w-4/5 md:w-5/6 bottom-0 md:ml-[4rem] w-full  ">
                             <div className="mt-[40px]" >
                                 <img
                                     src={QuoteImg}
@@ -24,7 +24,7 @@ export const YogaSection = () => {
                                 />
                             </div>
                             <div className="mb-[40px]" >
-                                <h1 className="text-3xl sm:text-2xl font-semibold font-sans text-[#fff] mb-5 leading-[3rem] ">
+                                <h1 className=" xl:text-[30px] text-[28px]  font-semibold font-sans text-[#fff] mb-5 leading-[3rem] ">
                                     {" "}
                                     <span className="text-[#85FAD7]">
                                         Word of mouth{" "}
@@ -44,11 +44,11 @@ export const YogaSection = () => {
                                 </Link>
                             </div>
                         </div>
-                        <div className="w-full px-5">
+                        <div className="w-full px-5  flex justify-end lg:justify-center md:justify-center ">
                             <img
                                 src={YogaIllustration}
                                 alt="Yoga illustration"
-                                className="w-3/4 lg:w-2/4 sm:w-full md:w-3/5 mx-auto"
+                                className="w-3/4 lg:w-2/4 sm:w-full md:w-3/5  "
                             />
                         </div>
                     </div>
