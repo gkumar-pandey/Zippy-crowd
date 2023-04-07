@@ -11,18 +11,17 @@ import {
     HairImg,
     GardenImg,
 } from "@/public"
-import Image from "next/image"
 
 export const JoinZippy = () => {
     return (
-        <section className=" gradient-top-to-bottom mt-02">
+        <section className=" gradient-top-to-bottom mt-02 ">
             <div className="mt-[-20px]" >
                 <Wave2Top />
             </div>
             <Container>
                 <div
                     id="join-zippy-section"
-                    className="pt-[100%] sm:p-0   relative sm:block "
+                    className="pt-[100%] sm:p-0 px-[30px]  relative sm:block "
                 >
                     <div className="  mb-28">
                         <div className="absolute top-[68%] sm:relative w-1/4 sm:w-3/4 sm:block sm:top-0 sm:mb-[40px] ">
