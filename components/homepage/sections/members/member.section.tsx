@@ -5,7 +5,7 @@ import { HeartSvg, PartyPopperSvg } from "@/public"
 import styles from "./member.module.css"
 
 export const MemberSection = () => {
-    console.log(styles)
+
     const tagBtns = [
         "Hairdresser",
         "Personal Trainer",
