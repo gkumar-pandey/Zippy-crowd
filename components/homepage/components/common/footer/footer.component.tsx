@@ -11,6 +11,7 @@ import { Container } from "../../container/container.component"
 import { SocialIcon } from "../../primitive/social-icon/social-icon.component"
 import { Button } from "../../primitive/button/button.component"
 import { FooterLink } from "../../primitive/footerlink/footerlink.component"
+import { Wave3Bottom } from "../../wave/wave-three-svg/wave-three-bottom.component"
 
 
 const FooterLinkTittle = ({ title }: { title: string }) => <>
@@ -70,15 +71,16 @@ export const Footer = () => {
     }
 
     return (
-        <section className="pt-10  footer-header footer" id="footer-section">
-            <div className="footer-bg-img" >
+        <section className=" footer-header " id="footer-section">
+            <Wave3Bottom />
+            <div className="footer-bg-img mt-[50px] sm:relative" >
                 <Container>
-                    <div className="footer-container pb-5 " >
+                    <div className="footer-container pb-5 relative sm:static  px-[15px]" >
                         <div >
                             <img src={FooterLogo} alt="footer-logo" className=" md:w-2/5 sm:w-9/12 " />
                         </div>
-                        <div className="my-12">
-                            <div className="grid gap-y-10 2xl:w-1/2  2xl:grid-cols-3 sm:grid-cols-2 grid-cols-4">
+                        <div className="my-12 footer-inner ">
+                            <div className="grid gap-y-10 2xl:w-1/2  2xl:grid-cols-3 xl:w-1/2 xl:grid-cols-3 sm:grid-cols-2 grid-cols-4">
                                 <div className="text-lg text-[#fff]">
                                     <FooterLinkTittle title="Company" />
                                     <FooterLinkList title="About us" link='https://blog.zippycrowd.com/about-us/' />
@@ -131,11 +133,11 @@ export const Footer = () => {
                                 </div>
                             </div>
                         </div>
-                        <div className="flex items-center w-full justify-between  sm:flex-wrap-reverse  ">
-                            <div className="sm:w-full py-5">
+                        <div className="flex items-center w-full justify-between my-[15px] sm:flex-wrap-reverse text-[#a5a6a8]   ">
+                            <div className="sm:w-full text-[14px] sm:mt-[65px] ">
                                 <p>© Copyright 2022. All rights reserved</p>
                             </div>
-                            <div className=" w-2/6  md:justify-start 2xl:w-4/6 2xl:justify-start 2xl:pl-4 sm:w-full justify-evenly flex gap-3  sm:justify-start">
+                            <div className=" w-2/6  md:justify-start 2xl:w-4/6 2xl:justify-start 2xl:pl-4 sm:w-full justify-evenly flex gap-3  sm:justify-start  ">
                                 <button>
                                     <Link
                                         href={
