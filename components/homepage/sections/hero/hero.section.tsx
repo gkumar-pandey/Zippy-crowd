@@ -1,12 +1,13 @@
 import Link from "next/link"
 import { useState } from "react"
+
 import { Container } from "../../components/container/container.component"
-import { HeroArrowSvg, HeroImg } from "@/public"
 import { Wave1Top } from "../../components/wave/wave-one-svg/wave-one-top.component"
 import { Button } from "../../components/primitive/button/button.component"
 import { Modal } from "../../components/primitive/modal/modal.component"
 import { Text } from "../../components/primitive/text/text.component"
 import { YouTubeVideo } from "../../components/primitive/youtube-video/youtube-video.component"
+import { HeroArrowSvg, HeroImg } from "@/public"
 import styles from './hero.module.css'
 
 export const HeroSection = () => {
@@ -65,7 +66,7 @@ export const HeroSection = () => {
                                     />
                                 </div>
                             </div>
-                            <div className="text-lg w-10/12 lg:w-11/12 md:w-11/12 font-sans mb-4 leading-[2rem]  ">
+                            <div className="text-lg w-10/12 lg:w-11/12 md:w-11/12 font-sans mb-4 leading-[2rem]  sm:w-full ">
                                 <span className="">
                                     Reach new customers on the{" "}
                                     <strong>strength</strong> of your

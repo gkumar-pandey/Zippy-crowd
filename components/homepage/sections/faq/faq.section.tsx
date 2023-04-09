@@ -72,7 +72,6 @@ export const FAQSection = () => {
         } else {
             setActiveAnswer(findActiveAns?.answer)
         }
-
     }
     return (
         <section className="py-[3rem]" id="faq-section">
