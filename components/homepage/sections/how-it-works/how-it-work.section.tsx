@@ -54,10 +54,10 @@ const TextImgContainer = ({ boldText, normalText, image, backImage }: TextProps)
 
 export const HowItWorkSection = () => {
     return (
-        <section className="bg-[#F3F4FF] relative border border-[#F3F4FF] "  >
+        <section className="bg-[#F3F4FF] relative border border-[#F3F4FF] " id="how-zippy-work" >
             <div className={styles.howItWork} >
                 <Container>
-                    <div>
+                    <div className="px-[15px]"  >
                         <div>
                             <Text variant="title">How it works</Text>
                             <TextImgContainer boldText={'Connect your loyal customer community to your business.'} normalText="Claim your business profile on ZippyCrowd, share your work and watch your community support you." image={FeatureImg1Front} backImage={FeatureImg1Back} />
