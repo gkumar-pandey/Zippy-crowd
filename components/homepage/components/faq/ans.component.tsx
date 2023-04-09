@@ -8,7 +8,7 @@ export const AnswerOne = () => {
                         people in small businesses get new customers through
                         personal recommendations.
                     </p>
-                    <p>
+                    <p className="py-2" >
                         We are on a mission to bring more trust into the online
                         world of work.
                     </p>
