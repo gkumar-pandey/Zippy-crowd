@@ -1,0 +1,21 @@
+.backgroundImage {
+    background-image: url("../../../../../public/assets/home/images/wave3-bottom-xl.svg");
+    background-size: 102% auto;
+    padding-top: 8%;
+    background-repeat: no-repeat;
+    background-position: center bottom;
+}
+
+@media screen and (max-width: 768px) {
+    .backgroundImage {
+        background-image: url("../../../../../public/assets/home/images/wave3-bottom-md.svg");
+        padding-top: 12%;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .backgroundImage {
+        background-image: url("../../../../../public/assets/home/images/wave3-bottom-xs.svg");
+        padding-top: 20%;
+    }
+}

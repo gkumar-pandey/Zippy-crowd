@@ -39,31 +39,11 @@
     }
 }
 
-#hero-section {
-    background-image: url("../public/assets/home/images/thread1-md.svg");
-    background-repeat: no-repeat;
-    background-position-x: 70%;
-}
-
-#member-section {
-    background-image: url("../public/assets/home/images/thread2-md.svg");
-    background-repeat: no-repeat;
-    background-size: auto 100%;
-    background-position-x: 70%;
-}
-
 #join-zippy-section {
     background-image: url("../public/assets/home/images/thread2-md.svg");
     background-repeat: no-repeat;
     background-size: auto 100%;
     background-position: right bottom;
-}
-
-#how-zippy-work {
-    background-image: url("../public/assets/home/images/thread5-md.svg");
-    background-repeat: no-repeat;
-    background-size: auto 100%;
-    background-position: right top;
 }
 
 #how-zippy-help {
@@ -98,7 +78,6 @@
     border: 1px solid red;
     background-image: url("../public/assets/home/images/wave2-bottom-xl.svg");
     background-repeat: no-repeat;
-
     background-position: top;
     background-size: 100% auto;
 }
@@ -132,6 +111,20 @@
     background-image: url("../public/assets/home/images/wave3-top-xl.svg");
     background-repeat: no-repeat;
     background-size: auto 100%;
+}
+
+.footer-inner::after {
+    content: "";
+    background-image: url("../public/assets/home/images/thread3-xs.svg");
+    display: block;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: -300px;
+    bottom: 300px;
+    background-size: auto 100%;
+    background-position: right bottom;
+    background-repeat: no-repeat;
 }
 
 .fade-in-animation {
@@ -200,7 +193,7 @@
 
 .bar {
     height: 5px;
-    background-color: #20c997;
+    background-color: #85fad7;
     animation-name: progress-bar;
     animation-duration: 6s;
     animation-iteration-count: infinite;
@@ -234,14 +227,9 @@
 }
 
 /* scroll bar style end */
+
 /* CSS For md devices Start*/
 @media screen and (max-width: 768px) {
-    #hero-section {
-        background-image: url("../public/assets/home/images/thread1-xs.svg");
-        background-repeat: no-repeat;
-        background-position-x: right;
-        /* border: 1px solid red; */
-    }
     #join-zippy-section {
         background-image: url("../public/assets/home/images/thread2-md.svg");
         background-repeat: no-repeat;
@@ -256,13 +244,6 @@
 /* CSS for sm Devices Start */
 
 @media screen and (max-width: 600px) {
-    #member-section {
-        /* border: 1px solid red; */
-        background-image: url("../public/assets/home/images/thread2-xs.svg");
-        background-repeat: no-repeat;
-        background-size: auto 100%;
-        background-position: right top;
-    }
     #join-zippy-section {
         background-image: url("../public/assets/home/images/thread2-xs.svg");
     }
@@ -271,6 +252,19 @@
         background-size: auto calc(100% - 200px);
         background-image: url("../public/assets/home/images/aubergine.svg");
         background-repeat: no-repeat;
+        background-repeat: no-repeat;
+    }
+    .footer-inner::after {
+        content: "";
+        background-image: url("../public/assets/home/images/thread3-md.svg");
+        display: block;
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: -400px;
+        bottom: 100px;
+        background-size: auto 100%;
+        background-position: right bottom;
         background-repeat: no-repeat;
     }
 }

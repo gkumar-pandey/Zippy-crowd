@@ -26,7 +26,7 @@ export const Box = ({ children, variant, onClick, activeQuestion, idx }: BoxProp
                         alt="beak-image"
                         className={beakSvgStyle}
                     />
-                    <div className="border border-[#3be0ca] rounded-md p-2">
+                    <div className="border border-[#3be0ca] rounded-md p-[15px]">
                         {children}
                     </div>
                 </div>
