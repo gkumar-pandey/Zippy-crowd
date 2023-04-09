@@ -5,7 +5,7 @@ export const HowZippyHelpSection = () => {
     return (
         <section className="bg-[#F3F4FF] pt-40 mt-02 px-[30px] sm:px-0 " >
             <Container>
-                <div id="how-zippy-help" className="pb-[10rem]">
+                <div id="how-zippy-help" className="pb-[10rem] px-[15px] ">
                     <Text variant="title">how zippy helps</Text>
                     <div className="flex flex-col " >
                         <div className=" mb-[150px]  w-6/12 xl:w-6/12 lg:w-7/12 md:w-8/12  sm:w-full ">

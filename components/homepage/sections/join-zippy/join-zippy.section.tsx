@@ -1,4 +1,5 @@
 import Link from "next/link"
+
 import { Container } from "../../components/container/container.component"
 import { Wave2Top } from "../../components/wave/wave-two-svg/wave-two-top.component"
 import { Wave2Bottom } from "../../components/wave/wave-two-svg/wave-two-bottom.component"
@@ -12,35 +13,62 @@ import {
     GardenImg,
 } from "@/public"
 
+
+// Image components 
+const DogImgComp = () => {
+    return <div className="absolute w-[33%] top-0 left-0 lg:w-[25%] lg:top-[74%] md:w-[25%] md:top-[74%] sm:relative   sm:w-3/4 sm:block sm:top-0 sm:mb-[40px] ">
+        <img src={DogImg} alt="img-dog" className="" />
+    </div>
+}
+
+const BoxingImgComp = () => {
+    return <div className="absolute w-[33%]   left-[33%] top-[72%] lg:w-[38%]  lg:left-[45%] lg:top-[7%] md:w-[38%]  md:left-[45%] md:top-[7%]   sm:relative sm:block sm:w-3/4  sm:left-[23%] sm:mb-[40px] ">
+        <img src={BoxingImg} alt="boxing-img" />
+    </div>
+}
+
+const HairImgComp = () => {
+    return <div className="absolute w-[42%] left-[25%] top-[31%] lg:w-[50%] lg:top-[35%] md:w-[50%] md:top-[35%] sm:relative sm:block sm:w-[100%] sm:left-0  ">
+        <img src={HairImg} alt="hair-cut-img" />
+    </div>
+}
+
+const GardenImgComp = () => {
+    return <div className="absolute left-[75%] top-[60%] lg:left-0 lg:top-0 lg:w-[25%] md:left-0 md:top-0 md:w-[25%] sm:hidden ">
+        <img src={GardenImg} alt="garden-img" />
+    </div>
+}
+
+const BarberImgComp = () => {
+    return <div className="absolute  left-0 top-[67%] lg:left-[38%] lg:w-[25%] lg:top-[78%] md:left-[38%] md:w-[25%] md:top-[78%]   sm:hidden ">
+        <img src={BarberImg} alt="barber-img" />
+    </div>
+}
+
+const DecoratorImgComp = () => {
+    return <div className=" absolute w-[21%]  left-[75%] top-[17%] lg:w-[25%] lg:top-[70%] md:w-[25%] md:top-[69%] sm:hidden ">
+        <img src={DecoratorImg} alt="decorator-img" />
+    </div>
+}
+
+// Main Component
+
 export const JoinZippy = () => {
     return (
-        <section className=" gradient-top-to-bottom mt-02 ">
+        <section className=" gradient-top-to-bottom ">
             <div className="mt-[-20px]" >
                 <Wave2Top />
             </div>
             <Container>
-                <div
-                    id="join-zippy-section"
-                    className="pt-[100%] sm:p-0 px-[30px]  relative sm:block "
-                >
-                    <div className="  mb-28">
-                        <div className="absolute top-[68%] sm:relative w-1/4 sm:w-3/4 sm:block sm:top-0 sm:mb-[40px] ">
-                            <img src={DogImg} alt="img-dog" className="" />
-                        </div>
-                        <div className="absolute w-[38%] right-[13%]  top-[7%] sm:relative sm:right-0 sm:block sm:w-3/4 sm:ml-[25%] sm:mb-[40px] ">
-                            <img src={BoxingImg} alt="boxing-img" />
-                        </div>
-                        <div className="absolute w-1/2 left-[25%] top-[36%] sm:relative  sm:block sm:w-[100%] sm:left-0  ">
-                            <img src={HairImg} alt="hair-cut-img" />
-                        </div>
-                        <div className="absolute top-0 left-0 w-1/4 md:left-0 md:top-0 sm:hidden ">
-                            <img src={GardenImg} alt="garden-img" />
-                        </div>
-                        <div className="absolute w-1/4 left-[38%] top-[71%] md:left-[40%] md:top-[70%] md:w-1/4  sm:hidden ">
-                            <img src={BarberImg} alt="barber-img" />
-                        </div>
-                        <div className=" absolute w-1/4 left-3/4 top-[65%] md:right-0  md:top-[60%] sm:hidden ">
-                            <img src={DecoratorImg} alt="decorator-img" />
+                <div id="join-zippy-section" className="px-[15px]" >
+                    <div className="mt-[30px] sm:p-0 relative sm:block ">
+                        <div className="sm:pt-0 pt-[100%] mb-28">
+                            <DogImgComp />
+                            <BoxingImgComp />
+                            <HairImgComp />
+                            <GardenImgComp />
+                            <BarberImgComp />
+                            <DecoratorImgComp />
                         </div>
                     </div>
                     <div className=" flex justify-center  bottom-0  ">
@@ -52,7 +80,6 @@ export const JoinZippy = () => {
                     </div>
                 </div>
             </Container>
-
             <Wave2Bottom />
         </section>
     )
