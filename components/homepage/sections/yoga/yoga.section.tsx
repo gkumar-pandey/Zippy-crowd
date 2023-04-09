@@ -13,7 +13,7 @@ export const YogaSection = () => {
                 <Wave2Top />
             </div>
             <Container>
-                <div className="pt-20">
+                <div className="pt-20 px-[15px]">
                     <div className="flex justify-between items-end  lg:flex-wrap-reverse md:flex-wrap-reverse sm:flex-wrap-reverse  ">
                         <div className="lg:mx-auto lg:w-4/5 md:w-5/6 bottom-0 md:ml-[4rem] w-full  ">
                             <div className="mt-[40px]" >

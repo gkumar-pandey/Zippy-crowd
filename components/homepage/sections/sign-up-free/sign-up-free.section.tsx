@@ -33,7 +33,7 @@ export const SignUpSection = () => {
 
             <div className="py-10 ">
                 <Container>
-                    <div className="flex items-center lg:flex-wrap-reverse md:flex-wrap-reverse sm:flex-wrap-reverse ">
+                    <div className="px-[15px] flex items-center lg:flex-wrap-reverse md:flex-wrap-reverse sm:flex-wrap-reverse ">
                         <div className=" ml-[100px] lg:pl-[26px]  md:w-4/5 md:mx-auto w-full lg:w-3/4 lg:mx-auto sm:m-0 ">
                             <h1 className="xl:text-3xl 2xl:text-3xl text-[28px]  mb-2  w-10/12 md:w-11/12 sm:text-2xl font-semibold font-sans text-[#fff] leading-[3rem] sm:w-full ">
                                 <span className="text-[#85FAD7]">
