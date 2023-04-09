@@ -1,7 +1,7 @@
 import { Container } from "../../components/container/container.component"
 import { Button } from "../../components/primitive/button/button.component"
 import { Text } from "../../components/primitive/text/text.component"
-import { HeartSvg, PartyPopperSvg } from "@/public"
+import { PartyPopperSvg } from "@/public"
 import styles from "./member.module.css"
 
 export const MemberSection = () => {
@@ -19,7 +19,7 @@ export const MemberSection = () => {
     return (
         <section className={`pt-12 pb-6 bg-[#F3F4FF] mt-02 `} >
             <Container>
-                <div className={`${styles.member} ${styles.memberSection} relative`}  >
+                <div className={`${styles.member} ${styles.memberSection} relative px-[15px]`}  >
                     <div>
                         <Text variant="title">our members</Text>
                         <div>
@@ -38,7 +38,6 @@ export const MemberSection = () => {
                             </div>
                         </div>
                     </div>
-
                     <div className="flex  justify-start gap-[6rem] lg:gap-[4rem] px-2 sm:px-0 md:px-0 md:gap-3 pb-[4rem] ">
                         <div className="w-1/4 flex justify-end md:justify-center md:items-start sm:hidden ">
                             <img
