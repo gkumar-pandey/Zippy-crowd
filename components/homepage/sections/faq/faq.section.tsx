@@ -79,8 +79,8 @@ export const FAQSection = () => {
             <Container>
                 <div className="px-[15px]" >
                     <Text variant="title">frequently asked questions</Text>
-                    <div className="pb-[2rem] grid grid-cols-2 gap-6 md:grid-cols-1   md:flex-wrap sm:flex-wrap relative border-b-4 border-[#E188AF]">
-                        <div className="" >
+                    <div className="pb-[2rem] grid grid-cols-2 gap-6 md:grid-cols-1 sm:grid-cols-1 md:flex-wrap sm:flex-wrap relative border-b-4 border-[#E188AF]">
+                        <div>
                             {faqData.map(({ question, answer, id }, index) => (
                                 <div
                                     className="flex justify-between md:flex-wrap sm:flex-wrap"
@@ -102,7 +102,7 @@ export const FAQSection = () => {
                                 </div>
                             ))}
                         </div>
-                        <div className='md:hidden' >
+                        <div className='md:hidden sm:hidden ' >
                             <div
                                 className={`${activeAnswer ? "block" : "hidden"} `}
                             >
