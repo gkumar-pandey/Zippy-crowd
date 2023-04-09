@@ -1,0 +1,23 @@
+.heroSectionBgThread {
+    background-image: url("../../../../public/assets/home/images/thread1-md.svg");
+    background-repeat: no-repeat;
+    background-size: 75% auto;
+    background-position: right bottom;
+    padding-bottom: 200px;
+}
+
+@media screen and (max-width: 1024px) {
+    .heroSectionBgThread {
+        background-size: auto 80%;
+        background-position: right bottom;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .heroSectionBgThread {
+        background-image: url("../../../../public/assets/home/images/thread1-xs.svg");
+        background-size: 100% auto;
+        padding-bottom: 30px;
+        background-position: bottom;
+    }
+}

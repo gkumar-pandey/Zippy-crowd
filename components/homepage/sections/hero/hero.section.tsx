@@ -7,6 +7,7 @@ import { Button } from "../../components/primitive/button/button.component"
 import { Modal } from "../../components/primitive/modal/modal.component"
 import { Text } from "../../components/primitive/text/text.component"
 import { YouTubeVideo } from "../../components/primitive/youtube-video/youtube-video.component"
+import styles from './hero.module.css'
 
 export const HeroSection = () => {
     const [isModalOpen, setIsModalOpen] = useState(false)
@@ -24,15 +25,15 @@ export const HeroSection = () => {
                 </div>
             </Modal>
             <Container>
-                <div className="flex sm:flex-wrap pb-48  " id="hero-section">
-                    <div className=" mt-[85px]  ">
-                        <div>
-                            <h1 className="text-5xl sm:text-3xl md:text-4xl font-semibold text-[#fff] leading-[4rem]  w-3/4 md:w-full font-sans">
+                <div className={`grid grid-cols-2 md:flex sm:grid-cols-1 pb-48 ${styles.heroSectionBgThread} px-[15px] `}  >
+                    <div>
+                        <div className=" mt-[88px] mb-[50px] lg:mt-[85px] md:mt-[85px] sm:mt-[42px] sm:mb-[50px] " >
+                            <h1 className="text-5xl lg:text-[40px] md:text-[40px] sm:text-3xl  font-semibold text-[#fff] leading-[4rem] md:leading-[56px]  md:w-full font-sans">
                                 The word-of-mouth platform powering
                             </h1>
-                            <h1 className="text-5xl sm:text-3xl md:text-4xl font-semibold text-[#85FAD7] animated-text my-3 font-sans"></h1>
+                            <h1 className="text-5xl lg:text-[40px]  md:text-[40px] sm:text-3xl font-semibold text-[#85FAD7] animated-text my-3 font-sans"></h1>
                             <div className="flex items-center ">
-                                <div className="count mr-1">
+                                <div className="count mr-1 text-[10px] ">
                                     <span className="px-1">of 3</span>
                                 </div>
                                 <div className="bar-container">
@@ -40,7 +41,7 @@ export const HeroSection = () => {
                                 </div>
                             </div>
                         </div>
-                        <div className="text-[#fff]  mt-[50px] ">
+                        <div className="text-[#fff]   ">
                             <div className="flex font-sans text-lg mb-4 relative   ">
                                 <div className=" leading-[2rem]">
                                     <span>
@@ -64,15 +65,14 @@ export const HeroSection = () => {
                                     />
                                 </div>
                             </div>
-                            <div className="text-lg font-sans mb-4 leading-[2rem]  ">
+                            <div className="text-lg w-10/12 lg:w-11/12 md:w-11/12 font-sans mb-4 leading-[2rem]  ">
                                 <span className="">
                                     Reach new customers on the{" "}
                                     <strong>strength</strong> of your
                                 </span>
-                                <br />
                                 <strong> positive reputation.</strong>
                             </div>
-                            <div className=" flex my-[2rem] gap-5">
+                            <div className=" flex mt-[40px] gap-5">
                                 <Button variant="filled" onClick={onClick}>
                                     Watch Demo
                                 </Button>
@@ -84,9 +84,9 @@ export const HeroSection = () => {
                             </div>
                         </div>
                     </div>
-                    <div className="flex items-center ">
-                        <div>
-                            <img src={HeroImg} alt="Hero image" />
+                    <div className=" flex justify-center items-center md:items-start  md:mt-[180px]  mt-[120px] lg:mt-[180px] sm:mt-[80px] ">
+                        <div className="w-[350px] lg:w-[450px] md:w-[270px] sm:w-[395px] " >
+                            <img src={HeroImg} alt="Hero image" className="" />
                         </div>
                     </div>
                 </div>
