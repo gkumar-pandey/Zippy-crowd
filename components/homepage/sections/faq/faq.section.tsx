@@ -61,42 +61,59 @@ const faqData = [
 ]
 
 export const FAQSection = () => {
-    const [activeQuestion, setActiveQuestion] = useState(null);
+    const [activeQuestionNumber, setActiveQuestionNumber] = useState(null);
+    const [activeAnswer, setActiveAnswer] = useState<any | null>('');
 
-    const onClickHandler = (idx: any) => {
-        setActiveQuestion(idx == activeQuestion ? null : idx)
+    const onClickHandler = (activeQuesNum: any) => {
+        setActiveQuestionNumber(activeQuesNum === activeQuestionNumber ? null : activeQuesNum);
+        const findActiveAns = faqData.find(({ id }) => activeQuesNum === id)
+        if (activeAnswer === findActiveAns?.answer) {
+            setActiveAnswer('')
+        } else {
+            setActiveAnswer(findActiveAns?.answer)
+        }
+
     }
     return (
         <section className="py-[3rem]" id="faq-section">
             <Container>
-                <div>
+                <div className="px-[15px]" >
                     <Text variant="title">frequently asked questions</Text>
-                    <div className="pb-[2rem] md:flex-wrap sm:flex-wrap relative border-b-4 border-[#E188AF]">
-                        {faqData.map(({ question, answer, id }, index) => (
-                            <div
-                                className="flex justify-between md:flex-wrap sm:flex-wrap"
-                                key={index}
-                            >
-                                <Box variant="question" onClick={() => onClickHandler(index)} idx={index} activeQuestion={activeQuestion}  >
-                                    <div >
-                                        {question}
-                                    </div>
-                                </Box>
+                    <div className="pb-[2rem] grid grid-cols-2 gap-6 md:grid-cols-1   md:flex-wrap sm:flex-wrap relative border-b-4 border-[#E188AF]">
+                        <div className="" >
+                            {faqData.map(({ question, answer, id }, index) => (
                                 <div
-                                    className={`${activeQuestion === index
-                                        ? "block"
-                                        : "hidden"
-                                        }`}
+                                    className="flex justify-between md:flex-wrap sm:flex-wrap"
+                                    key={index}
                                 >
-                                    <Box variant="ansbox">{answer}</Box>
+                                    <Box variant="question" onClick={() => onClickHandler(id)} idx={id} activeQuestion={activeQuestionNumber}  >
+                                        <div >
+                                            {question}
+                                        </div>
+                                    </Box>
+                                    <div
+                                        className={`${activeQuestionNumber === id
+                                            ? "block"
+                                            : "hidden"
+                                            } xl:hidden 2xl:hidden lg:hidden`}
+                                    >
+                                        <Box variant="ansbox">{answer}</Box>
+                                    </div>
                                 </div>
+                            ))}
+                        </div>
+                        <div className='md:hidden' >
+                            <div
+                                className={`${activeAnswer ? "block" : "hidden"} `}
+                            >
+                                <Box variant="ansbox">{activeAnswer}</Box>
                             </div>
-                        ))}
+                        </div>
                     </div>
                 </div>
             </Container>
             <Container>
-                <div className="py-[2rem]">
+                <div className="py-[2rem] px-[15px] ">
                     <p className="mb-2">
                         Got a question? <Link href='https://blog.zippycrowd.com/contact-us/' target='_blank' >
                             <button>Get in touch</button>

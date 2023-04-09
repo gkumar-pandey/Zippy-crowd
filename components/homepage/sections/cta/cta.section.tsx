@@ -7,32 +7,33 @@ import { CtaImg } from "@/public"
 
 export const CTA = () => {
     return (
-        <section className="gradient-top-to-bottom pb-28 relative ">
-            <div className="absolute w-full  ">
+        <section className=" cta-section relative  ">
+            <div className="absolute w-full">
                 <Wave3Top />
             </div>
             <Container>
-                <div className="relative w-5/6 mx-auto md:w-full sm:w-full 2xl:w-full ">
-                    <div className="grid grid-cols-2 sm:grid-cols-1 ">
-                        <div>
-                            <img src={CtaImg} alt="cta-image" />
+                <div className="relative w-5/6 mx-auto   md:w-full sm:w-full 2xl:w-full pb-[120px]  2xl:pl-[100px] px-[15px] ">
+                    <div className=" flex sm:flex-wrap ">
+                        <div className=" lg:w-full sm:w-9/12" >
+                            <img src={CtaImg} alt="cta-image" className=" " />
                         </div>
-                        <div className="mt-[200px] sm:mt-10">
-                            <p className=" sm:w-4/6 sm:mx-0 mx-auto w-2/5 md:w-4/6 leading-8 ">
+                        <div className="  flex justify-center items-center md:justify-end md:items-start md:mt-[230px] sm:justify-start sm:mt-[40px] sm:mb-[7px] ">
+                            <p className="  w-1/2  md:w-5/6 sm:w-9/12 text-lg  ">
                                 It’s not what you know, nor who you know, but
                                 who knows you.
                             </p>
                         </div>
                     </div>
-                    <div className="grid grid-cols-1 text-3xl sm:text-2xl  sm:w-full mt-8 mb-12   text-[#fff] font-semibold w-4/6  md:w-full leading-[3rem] ">
-                        <p>
+                    <div className=" mt-[30px] mb-[50px] text-[28px] font-sans font-semibold ">
+                        <p className=" w-8/12 md:w-full sm:w-full sm:text-[25px]  " >
                             The more people who{" "}
                             <span className="text-[#a8e6d7]">trust</span> you and{" "}
                             <span className="text-[#a8e6d7]">recommend</span>{" "}
                             your work,{" "}
                             <span className="text-[#a8e6d7]">
-                                the more discoverable you become.
+                                the more discoverable you become
                             </span>
+                            <span>.</span>
                         </p>
                     </div>
                     <div className="md:text-center ">
@@ -44,9 +45,7 @@ export const CTA = () => {
                     </div>
                 </div>
             </Container>
-            <div>
-                <Wave3Bottom />
-            </div>
+
         </section>
     )
 }
