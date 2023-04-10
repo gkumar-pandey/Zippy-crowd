@@ -18,12 +18,14 @@ function useElementOnScreen(ref: RefObject<Element>, rootMargin = "0px") {
             },
             { rootMargin }
         );
-        if (ref.current) {
-            observer.observe(ref.current);
+        const refCurr = ref.current;
+        if (refCurr) {
+            observer.observe(refCurr);
         }
         return () => {
-            if (ref.current) {
-                observer.unobserve(ref.current);
+
+            if (refCurr) {
+                observer.unobserve(refCurr);
             }
         };
     }, [ref, rootMargin]);
@@ -64,21 +66,6 @@ const FadeIn: FC<PropsWithChildren> = ({ children }) => (
     </AnimateIn>
 );
 
-const FadeUp: FC<PropsWithChildren> = ({ children }) => (
-    <AnimateIn
-        from={{ opacity: 0, translate: "0 2rem" }}
-        to={{ opacity: 1, translate: "none" }}
-    >
-        {children}
-    </AnimateIn>
-);
-
-const ScaleIn: FC<PropsWithChildren> = ({ children }) => (
-    <AnimateIn from={{ scale: "0" }} to={{ scale: "1" }}>
-        {children}
-    </AnimateIn>
-);
-
 const FadeInDelay: FC<PropsWithChildren> = ({ children }) => (
     <AnimateIn from={{ opacity: 0, transitionDelay: '0.2s' }} to={{ opacity: 1 }}   >
         {children}
@@ -87,9 +74,7 @@ const FadeInDelay: FC<PropsWithChildren> = ({ children }) => (
 
 const Animate = {
     FadeIn,
-    FadeUp,
-    FadeInDelay,
-    ScaleIn
+    FadeInDelay
 }
 
 export default Animate
