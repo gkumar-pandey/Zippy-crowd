@@ -10,6 +10,7 @@ import {
     HeartSvg
 } from "@/public"
 import styles from './how-it-work.module.css'
+import Animate from "../../components/animations/animation"
 
 
 interface TextProps {
@@ -22,30 +23,37 @@ interface TextProps {
 const TextImgContainer = ({ boldText, normalText, image, backImage }: TextProps) => {
     return (<div className="grid grid-cols-2 sm:grid-cols-1  ">
         <div className="flex flex-wrap sm:w-full md:pr-[15px] ">
-            <div>
-                <div className="w-10/12 lg:w-full lg:pr-2 md:w-full sm:w-full " >
-                    <Text variant="header">
-                        {boldText}
-                    </Text>
+            <Animate.FadeIn>
+                <div>
+                    <div className="w-10/12 lg:w-full lg:pr-2 md:w-full sm:w-full " >
+                        <Text variant="header">
+                            {boldText}
+                        </Text>
+                    </div>
+                    <div className=" w-10/12 lg:w-full md:w-full sm:w-full lg:pr-2 " >
+                        <Text variant="text">
+                            {normalText}
+                        </Text>
+                    </div>
                 </div>
-                <div className=" w-10/12 lg:w-full md:w-full sm:w-full lg:pr-2 " >
-                    <Text variant="text">
-                        {normalText}
-                    </Text>
-                </div>
-            </div>
+            </Animate.FadeIn>
         </div>
         <div className="flex items-center justify-end  md:pl-[15px] ">
             <div className="relative w-[445px] ">
-                <img
-                    src={image}
-                    alt="front-feature-image"
-                    className="absolute"
-                />
-                <img
-                    src={backImage}
-                    alt="back-feature-image"
-                />
+                <Animate.FadeInDelay>
+                    <img
+                        src={image}
+                        alt="front-feature-image"
+                        className="absolute"
+                    />
+                </Animate.FadeInDelay>
+                <Animate.FadeIn>
+
+                    <img
+                        src={backImage}
+                        alt="back-feature-image"
+                    />
+                </Animate.FadeIn>
             </div>
         </div>
     </div>)
@@ -59,7 +67,9 @@ export const HowItWorkSection = () => {
                 <Container>
                     <div className="px-[15px]"  >
                         <div>
-                            <Text variant="title">How it works</Text>
+                            <Animate.FadeIn>
+                                <Text variant="title">How it works</Text>
+                            </Animate.FadeIn>
                             <TextImgContainer boldText={'Connect your loyal customer community to your business.'} normalText="Claim your business profile on ZippyCrowd, share your work and watch your community support you." image={FeatureImg1Front} backImage={FeatureImg1Back} />
                         </div>
 

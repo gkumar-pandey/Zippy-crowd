@@ -20,6 +20,12 @@
     top: -60px;
 }
 
+@media screen and (min-width: 1440px) {
+    .heartSvg::after {
+        top: -1px;
+    }
+}
+
 @media screen and (max-width: 1024px) {
     .howItWork {
         margin-top: 169px;

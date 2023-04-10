@@ -21,6 +21,7 @@ import {
 import { Box, Text } from "../../components"
 import { Container } from "../../components/container/container.component"
 import Link from "next/link"
+import Animate from "../../components/animations/animation"
 
 const faqData = [
     {
@@ -77,7 +78,9 @@ export const FAQSection = () => {
         <section className="py-[3rem]" id="faq-section">
             <Container>
                 <div className="px-[15px]" >
-                    <Text variant="title">frequently asked questions</Text>
+                    <Animate.FadeIn>
+                        <Text variant="title">frequently asked questions</Text>
+                    </Animate.FadeIn>
                     <div className="pb-[2rem] grid grid-cols-2 gap-6 md:grid-cols-1 sm:grid-cols-1 md:flex-wrap sm:flex-wrap relative border-b-4 border-[#E188AF]">
                         <div>
                             {faqData.map(({ question, answer, id }, index) => (
@@ -112,18 +115,20 @@ export const FAQSection = () => {
                 </div>
             </Container>
             <Container>
-                <div className="py-[2rem] px-[15px] ">
-                    <p className="mb-2">
-                        Got a question? <Link href='https://blog.zippycrowd.com/contact-us/' target='_blank' >
-                            <button>Get in touch</button>
-                        </Link>
-                    </p>
-                    <p>
-                        Ready to join us on ZippyCrowd? <Link href='https://app.zippycrowd.com/login' >
-                            <button>Join us</button>
-                        </Link>
-                    </p>
-                </div>
+                <Animate.FadeIn>
+                    <div className="py-[2rem] px-[15px] ">
+                        <p className="mb-2">
+                            Got a question? <Link href='https://blog.zippycrowd.com/contact-us/' target='_blank' >
+                                <button>Get in touch</button>
+                            </Link>
+                        </p>
+                        <p>
+                            Ready to join us on ZippyCrowd? <Link href='https://app.zippycrowd.com/login' >
+                                <button>Join us</button>
+                            </Link>
+                        </p>
+                    </div>
+                </Animate.FadeIn>
             </Container>
         </section>
     )
