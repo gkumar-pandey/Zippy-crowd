@@ -8,7 +8,7 @@ import { Modal } from "../../components/primitive/modal/modal.component"
 import { Text } from "../../components/primitive/text/text.component"
 import { YouTubeVideo } from "../../components/primitive/youtube-video/youtube-video.component"
 import { HeroArrowSvg, HeroImg } from "@/public"
-import styles from './hero.module.css'
+import styles from "./hero.module.css"
 
 export const HeroSection = () => {
     const [isModalOpen, setIsModalOpen] = useState(false)
@@ -26,9 +26,11 @@ export const HeroSection = () => {
                 </div>
             </Modal>
             <Container>
-                <div className={`grid grid-cols-2 md:flex sm:grid-cols-1 pb-48 ${styles.heroSectionBgThread} px-[15px] `}  >
+                <div
+                    className={`grid grid-cols-2 md:flex sm:grid-cols-1 pb-48 ${styles.heroSectionBgThread} px-[15px] `}
+                >
                     <div>
-                        <div className=" mt-[88px] mb-[50px] lg:mt-[85px] md:mt-[85px] sm:mt-[42px] sm:mb-[50px] " >
+                        <div className=" mt-[88px] mb-[50px] lg:mt-[85px] md:mt-[85px] sm:mt-[42px] sm:mb-[50px] ">
                             <h1 className="text-5xl lg:text-[40px] md:text-[40px] sm:text-3xl  font-semibold text-[#fff] leading-[4rem] md:leading-[56px]  md:w-full font-sans">
                                 The word-of-mouth platform powering
                             </h1>
@@ -60,10 +62,7 @@ export const HeroSection = () => {
                                     </span>
                                 </div>
                                 <div className="absolute left-[200px] top-[20px]   ">
-                                    <img
-                                        src={HeroArrowSvg}
-                                        alt="Hero-arrow"
-                                    />
+                                    <img src={HeroArrowSvg} alt="Hero-arrow" />
                                 </div>
                             </div>
                             <div className="text-lg w-10/12 lg:w-11/12 md:w-11/12 font-sans mb-4 leading-[2rem]  sm:w-full ">
@@ -86,7 +85,7 @@ export const HeroSection = () => {
                         </div>
                     </div>
                     <div className=" flex justify-center items-center md:items-start  md:mt-[180px]  mt-[120px] lg:mt-[180px] sm:mt-[80px] ">
-                        <div className="w-[350px] lg:w-[450px] md:w-[270px] sm:w-[395px] " >
+                        <div className="w-[350px] lg:w-[450px] md:w-[270px] sm:w-[395px] ">
                             <img src={HeroImg} alt="Hero image" className="" />
                         </div>
                     </div>

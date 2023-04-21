@@ -6,7 +6,6 @@ import { Wave2Bottom } from "../../components/wave/wave-two-svg/wave-two-bottom.
 import { YogaIllustration, QuoteImg } from "@/public"
 import Animate from "../../components/animations/animation"
 
-
 export const YogaSection = () => {
     return (
         <section className="gradient-top-to-bottom mt-02">
@@ -17,16 +16,15 @@ export const YogaSection = () => {
                 <Container>
                     <div className="pt-20 px-[15px]">
                         <div className="flex justify-between items-end  lg:flex-wrap-reverse md:flex-wrap-reverse sm:flex-wrap-reverse  ">
-
                             <div className="lg:mx-auto lg:w-4/5 md:w-5/6 bottom-0 md:ml-[4rem] w-full  ">
-                                <div className="mt-[40px]" >
+                                <div className="mt-[40px]">
                                     <img
                                         src={QuoteImg}
                                         alt="quote-image"
                                         className="w-[3rem]"
                                     />
                                 </div>
-                                <div className="mb-[40px]" >
+                                <div className="mb-[40px]">
                                     <h1 className=" xl:text-[30px] text-[28px]  font-semibold font-sans text-[#fff] mb-5 leading-[3rem] ">
                                         {" "}
                                         <span className="text-[#85FAD7]">
@@ -40,7 +38,11 @@ export const YogaSection = () => {
                                     </h1>
                                 </div>
                                 <div>
-                                    <Link href={"https://app.zippycrowd.com/login"}>
+                                    <Link
+                                        href={
+                                            "https://app.zippycrowd.com/login"
+                                        }
+                                    >
                                         <Button variant="filled">
                                             Get Started
                                         </Button>

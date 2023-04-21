@@ -62,14 +62,16 @@ const faqData = [
 ]
 
 export const FAQSection = () => {
-    const [activeQuestionNumber, setActiveQuestionNumber] = useState(null);
-    const [activeAnswer, setActiveAnswer] = useState<any | null>('');
+    const [activeQuestionNumber, setActiveQuestionNumber] = useState(null)
+    const [activeAnswer, setActiveAnswer] = useState<any | null>("")
 
     const onClickHandler = (activeQuesNum: any) => {
-        setActiveQuestionNumber(activeQuesNum === activeQuestionNumber ? null : activeQuesNum);
+        setActiveQuestionNumber(
+            activeQuesNum === activeQuestionNumber ? null : activeQuesNum
+        )
         const findActiveAns = faqData.find(({ id }) => activeQuesNum === id)
         if (activeAnswer === findActiveAns?.answer) {
-            setActiveAnswer('')
+            setActiveAnswer("")
         } else {
             setActiveAnswer(findActiveAns?.answer)
         }
@@ -77,7 +79,7 @@ export const FAQSection = () => {
     return (
         <section className="py-[3rem]" id="faq-section">
             <Container>
-                <div className="px-[15px]" >
+                <div className="px-[15px]">
                     <Animate.FadeIn>
                         <Text variant="title">frequently asked questions</Text>
                     </Animate.FadeIn>
@@ -88,25 +90,31 @@ export const FAQSection = () => {
                                     className="flex justify-between md:flex-wrap sm:flex-wrap"
                                     key={index}
                                 >
-                                    <Box variant="question" onClick={() => onClickHandler(id)} idx={id} activeQuestion={activeQuestionNumber}  >
-                                        <div >
-                                            {question}
-                                        </div>
+                                    <Box
+                                        variant="question"
+                                        onClick={() => onClickHandler(id)}
+                                        idx={id}
+                                        activeQuestion={activeQuestionNumber}
+                                    >
+                                        <div>{question}</div>
                                     </Box>
                                     <div
-                                        className={`${activeQuestionNumber === id
-                                            ? "block"
-                                            : "hidden"
-                                            } xl:hidden 2xl:hidden lg:hidden`}
+                                        className={`${
+                                            activeQuestionNumber === id
+                                                ? "block"
+                                                : "hidden"
+                                        } xl:hidden 2xl:hidden lg:hidden`}
                                     >
                                         <Box variant="ansbox">{answer}</Box>
                                     </div>
                                 </div>
                             ))}
                         </div>
-                        <div className='md:hidden sm:hidden ' >
+                        <div className="md:hidden sm:hidden ">
                             <div
-                                className={`${activeAnswer ? "block" : "hidden"} `}
+                                className={`${
+                                    activeAnswer ? "block" : "hidden"
+                                } `}
                             >
                                 <Box variant="ansbox">{activeAnswer}</Box>
                             </div>
@@ -118,12 +126,17 @@ export const FAQSection = () => {
                 <Animate.FadeIn>
                     <div className="py-[2rem] px-[15px] ">
                         <p className="mb-2">
-                            Got a question? <Link href='https://blog.zippycrowd.com/contact-us/' target='_blank' >
+                            Got a question?{" "}
+                            <Link
+                                href="https://blog.zippycrowd.com/contact-us/"
+                                target="_blank"
+                            >
                                 <button>Get in touch</button>
                             </Link>
                         </p>
                         <p>
-                            Ready to join us on ZippyCrowd? <Link href='https://app.zippycrowd.com/login' >
+                            Ready to join us on ZippyCrowd?{" "}
+                            <Link href="https://app.zippycrowd.com/login">
                                 <button>Join us</button>
                             </Link>
                         </p>

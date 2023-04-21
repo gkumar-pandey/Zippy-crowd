@@ -10,7 +10,6 @@ import { Text } from "../../components/primitive/text/text.component"
 import { YouTubeVideo } from "../../components/primitive/youtube-video/youtube-video.component"
 import Animate from "../../components/animations/animation"
 
-
 export const SignUpSection = () => {
     const [isModalOpen, setIsModalOpen] = useState(false)
 
@@ -73,7 +72,6 @@ export const SignUpSection = () => {
                                     </div>
                                 </div>
                             </div>
-
 
                             <div className=" w-full p-5 flex justify-end lg:justify-center md:justify-start ">
                                 <img

@@ -13,41 +13,38 @@ import { Button } from "../../primitive/button/button.component"
 import { FooterLink } from "../../primitive/footerlink/footerlink.component"
 import { Wave3Bottom } from "../../wave/wave-three-svg/wave-three-bottom.component"
 
+const FooterLinkTittle = ({ title }: { title: string }) => (
+    <>
+        <h2 className=" text-[#CCD0D5] font-sans text-lg ">{title}</h2>
+    </>
+)
 
-const FooterLinkTittle = ({ title }: { title: string }) => <>
-    <h2 className=" text-[#CCD0D5] font-sans text-lg ">
-        {title}
-    </h2>
-</>
-
-const FooterLinkList = ({ title, link }: { title: string, link: string, }) => {
-
+const FooterLinkList = ({ title, link }: { title: string; link: string }) => {
     const handleSmoothScroll = () => {
-        const ScrollSection = document.querySelector(`${link}`);
+        const ScrollSection = document.querySelector(`${link}`)
         ScrollSection?.scrollIntoView({ behavior: "smooth" })
-
     }
 
-    if (link[0] == '#') {
-        return <>
-            <FooterLink type="section" >
-                <p onClick={handleSmoothScroll} >{title}</p>
+    if (link[0] == "#") {
+        return (
+            <>
+                <FooterLink type="section">
+                    <p onClick={handleSmoothScroll}>{title}</p>
+                </FooterLink>
+            </>
+        )
+    }
+
+    return (
+        <>
+            <FooterLink type="external">
+                <Link href={link} target="_blank">
+                    {title}
+                </Link>
             </FooterLink>
         </>
-    }
-
-    return <>
-        <FooterLink type="external" >
-            <Link
-                href={link}
-                target="_blank"
-
-            >
-                {title}
-            </Link>
-        </FooterLink></>
+    )
 }
-
 
 export const Footer = () => {
     const socialIconData = [
@@ -63,9 +60,6 @@ export const Footer = () => {
         },
     ]
 
-
-
-
     const handleBackToTop = () => {
         window.scrollTo({ top: 0, behavior: "smooth" })
     }
@@ -73,37 +67,74 @@ export const Footer = () => {
     return (
         <section className=" footer-header " id="footer-section">
             <Wave3Bottom />
-            <div className="footer-bg-img mt-[50px] sm:relative" >
+            <div className="footer-bg-img mt-[50px] sm:relative">
                 <Container>
-                    <div className="footer-container pb-5 relative sm:static  px-[15px]" >
-                        <div >
-                            <img src={FooterLogo} alt="footer-logo" className=" md:w-2/5 sm:w-9/12 " />
+                    <div className="footer-container pb-5 relative sm:static  px-[15px]">
+                        <div>
+                            <img
+                                src={FooterLogo}
+                                alt="footer-logo"
+                                className=" md:w-2/5 sm:w-9/12 "
+                            />
                         </div>
                         <div className="my-12 footer-inner ">
                             <div className="grid gap-y-10 2xl:w-1/2  2xl:grid-cols-3 xl:w-1/2 xl:grid-cols-3 sm:grid-cols-2 grid-cols-4">
                                 <div className="text-lg text-[#fff]">
                                     <FooterLinkTittle title="Company" />
-                                    <FooterLinkList title="About us" link='https://blog.zippycrowd.com/about-us/' />
-                                    <FooterLinkList title="Work with us" link="https://blog.zippycrowd.com/work-with-us/" />
-                                    <FooterLinkList title="Contact us" link="https://blog.zippycrowd.com/contact-us/ " />
+                                    <FooterLinkList
+                                        title="About us"
+                                        link="https://blog.zippycrowd.com/about-us/"
+                                    />
+                                    <FooterLinkList
+                                        title="Work with us"
+                                        link="https://blog.zippycrowd.com/work-with-us/"
+                                    />
+                                    <FooterLinkList
+                                        title="Contact us"
+                                        link="https://blog.zippycrowd.com/contact-us/ "
+                                    />
                                 </div>
                                 <div className=" text-lg text-[#fff]">
                                     <FooterLinkTittle title="Resources" />
-                                    <FooterLinkList title="FAQs" link="#faq-section" />
-                                    <FooterLinkList title="Community" link="https://blog.zippycrowd.com/" />
-                                    <FooterLinkList title="Blog" link="https://blog.zippycrowd.com/" />
+                                    <FooterLinkList
+                                        title="FAQs"
+                                        link="#faq-section"
+                                    />
+                                    <FooterLinkList
+                                        title="Community"
+                                        link="https://blog.zippycrowd.com/"
+                                    />
+                                    <FooterLinkList
+                                        title="Blog"
+                                        link="https://blog.zippycrowd.com/"
+                                    />
                                 </div>
                                 <div className=" text-lg text-[#fff]">
                                     <FooterLinkTittle title="Legal" />
-                                    <FooterLinkList title="GDPR" link="https://blog.zippycrowd.com/legal-hub/gdpr-addendum/" />
-                                    <FooterLinkList title="Security" link="https://blog.zippycrowd.com/legal-hub/" />
-                                    <FooterLinkList title="Privacy" link="https://blog.zippycrowd.com/legal-hub/privacy-policy/" />
+                                    <FooterLinkList
+                                        title="GDPR"
+                                        link="https://blog.zippycrowd.com/legal-hub/gdpr-addendum/"
+                                    />
+                                    <FooterLinkList
+                                        title="Security"
+                                        link="https://blog.zippycrowd.com/legal-hub/"
+                                    />
+                                    <FooterLinkList
+                                        title="Privacy"
+                                        link="https://blog.zippycrowd.com/legal-hub/privacy-policy/"
+                                    />
                                 </div>
                                 <div className="lg:w-full xl:w-full 2xl:w-full ">
                                     <div className="text-lg font-sans text-[#fff]">
                                         <FooterLinkTittle title="Platform" />
-                                        <FooterLinkList title="Features" link="#how-zippy-work" />
-                                        <FooterLinkList title="Getting Started" link="https://blog.zippycrowd.com/product/getting-started/" />
+                                        <FooterLinkList
+                                            title="Features"
+                                            link="#how-zippy-work"
+                                        />
+                                        <FooterLinkList
+                                            title="Getting Started"
+                                            link="https://blog.zippycrowd.com/product/getting-started/"
+                                        />
                                     </div>
                                 </div>
                             </div>
@@ -120,7 +151,7 @@ export const Footer = () => {
                                     <Button variant="outlined">Login</Button>
                                 </Link>
                             </div>
-                            <div className="flex justify-end sm:justify-start " >
+                            <div className="flex justify-end sm:justify-start ">
                                 <div
                                     className="flex items-center gap-2 cursor-pointer "
                                     onClick={handleBackToTop}

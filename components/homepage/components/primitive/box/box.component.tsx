@@ -9,12 +9,18 @@ import {
 interface BoxProps {
     children: React.ReactNode
     variant: string
-    onClick?: any;
-    activeQuestion?: any;
-    idx?: any;
+    onClick?: any
+    activeQuestion?: any
+    idx?: any
 }
 
-export const Box = ({ children, variant, onClick, activeQuestion, idx }: BoxProps) => {
+export const Box = ({
+    children,
+    variant,
+    onClick,
+    activeQuestion,
+    idx,
+}: BoxProps) => {
     let isActive = activeQuestion == idx
 
     if (variant == "ansbox") {
@@ -36,7 +42,14 @@ export const Box = ({ children, variant, onClick, activeQuestion, idx }: BoxProp
         return (
             <div className={questionContainerStyle}>
                 <div>
-                    <button className={`${isActive ? ' bg-[#3be0ca] ' : 'bg-[#e9e9ed]'} ${quesWrapperStyle}  `} onClick={onClick} >{children}</button>
+                    <button
+                        className={`${
+                            isActive ? " bg-[#3be0ca] " : "bg-[#e9e9ed]"
+                        } ${quesWrapperStyle}  `}
+                        onClick={onClick}
+                    >
+                        {children}
+                    </button>
                 </div>
             </div>
         )

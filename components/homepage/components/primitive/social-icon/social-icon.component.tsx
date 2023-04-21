@@ -8,7 +8,11 @@ interface IconProps {
 }
 
 export const SocialIcon = ({ img, link }: IconProps) => (
-    <Link href={link} target="_blank" className="flex justify-center items-center " >
+    <Link
+        href={link}
+        target="_blank"
+        className="flex justify-center items-center "
+    >
         <img src={img} alt="" className={socialIconStyle} />
     </Link>
 )

@@ -1,7 +1,6 @@
 import { useEffect, useState } from "react"
 import Link from "next/link"
-
-import styles from './navbar.module.css'
+import styles from "./navbar.module.css"
 import { Container } from "../../container/container.component"
 import { NavLink } from "../../primitive/nav-link/nav-link.component"
 import { NavLogo } from "@/public"
@@ -10,12 +9,12 @@ import { Modal } from "../../primitive/modal/modal.component"
 import { PricingModalContent } from "../../pricing-modal/pricing-modal.component"
 
 export const Navbar = () => {
-    const [showDrawer, setShowDrawer] = useState(false);
+    const [showDrawer, setShowDrawer] = useState(false)
     const [showPriceModal, setShowPriceModal] = useState(false)
     const [navbarShow, setNavbarShow] = useState(true)
-    const [prevScrollPos, setPrevScrollPos] = useState(0);
+    const [prevScrollPos, setPrevScrollPos] = useState(0)
 
-    // function for smooth scrolling 
+    // function for smooth scrolling
     const scrollToSection = (event: any) => {
         const targetElement: any = document.getElementById(event)
         targetElement.scrollIntoView({ behavior: "smooth" })
@@ -25,23 +24,25 @@ export const Navbar = () => {
         setShowPriceModal(!showPriceModal)
     }
 
-
     useEffect(() => {
         const handleScroll = () => {
-            const currentScrollPos = window.pageYOffset;
-            const visible = prevScrollPos > currentScrollPos;
-            setPrevScrollPos(currentScrollPos);
-            setNavbarShow(visible);
+            const currentScrollPos = window.pageYOffset
+            const visible = prevScrollPos > currentScrollPos
+            setPrevScrollPos(currentScrollPos)
+            setNavbarShow(visible)
         }
-        window.addEventListener('scroll', handleScroll)
+        window.addEventListener("scroll", handleScroll)
         return () => {
-            window.removeEventListener('scroll', handleScroll)
+            window.removeEventListener("scroll", handleScroll)
         }
     }, [navbarShow, prevScrollPos])
 
-
     return (
-        <div className={`bg-[#5c15ad] py-5 w-full fixed top-0 z-10 ${navbarShow ? styles.navbar__visible : styles.navbarAnimation} `} >
+        <div
+            className={`bg-[#5c15ad] py-5 w-full fixed top-0 z-10 ${
+                navbarShow ? styles.navbar__visible : styles.navbarAnimation
+            } `}
+        >
             <Container>
                 <nav className=" px-[15px] lg:px-0 flex justify-between">
                     <div className="my-auto cursor-pointer ">
@@ -72,7 +73,7 @@ export const Navbar = () => {
                             </p>
                         </NavLink>
                         <NavLink>
-                            <p onClick={priceModalHandler} >Pricing</p>
+                            <p onClick={priceModalHandler}>Pricing</p>
                         </NavLink>
                     </div>
                     <div className="flex justify-between text-white gap-x-[50px] items-center ">
@@ -102,10 +103,17 @@ export const Navbar = () => {
                         </button>
                     </div>
                 </nav>
-                {showDrawer && <NavbarDrawer scrollToSection={scrollToSection} priceModalHandler={priceModalHandler} />}
-                {<Modal isOpen={showPriceModal} onClick={priceModalHandler} >
-                    <PricingModalContent />
-                </Modal>}
+                {showDrawer && (
+                    <NavbarDrawer
+                        scrollToSection={scrollToSection}
+                        priceModalHandler={priceModalHandler}
+                    />
+                )}
+                {
+                    <Modal isOpen={showPriceModal} onClick={priceModalHandler}>
+                        <PricingModalContent />
+                    </Modal>
+                }
             </Container>
         </div>
     )
