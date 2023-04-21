@@ -1,14 +1,17 @@
 import { useState } from "react"
 import Link from "next/link"
-import { Container } from "../../components/container/container.component"
-import { Wave2Top } from "../../components/wave/wave-two-svg/wave-two-top.component"
-import { Wave2Bottom } from "../../components/wave/wave-two-svg/wave-two-bottom.component"
-import { Button } from "../../components/primitive/button/button.component"
-import { HairIllustration } from "@/public"
-import { Modal } from "../../components/primitive/modal/modal.component"
-import { Text } from "../../components/primitive/text/text.component"
-import { YouTubeVideo } from "../../components/primitive/youtube-video/youtube-video.component"
+
 import Animate from "../../components/animations/animation"
+import { HairIllustration } from "@/public"
+import {
+    Modal,
+    YouTubeVideo,
+    Wave2Top,
+    Container,
+    Button,
+    Wave2Bottom,
+    Text,
+} from "../../components"
 
 export const SignUpSection = () => {
     const [isModalOpen, setIsModalOpen] = useState(false)

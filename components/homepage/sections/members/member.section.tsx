@@ -1,9 +1,7 @@
-import { Container } from "../../components/container/container.component"
-import { Button } from "../../components/primitive/button/button.component"
-import { Text } from "../../components/primitive/text/text.component"
 import { PartyPopperSvg } from "@/public"
 import styles from "./member.module.css"
 import Animate from "../../components/animations/animation"
+import { Button, Container, Text } from "../../components"
 
 export const MemberSection = () => {
     const tagBtns = [

@@ -1,10 +1,8 @@
 import Link from "next/link"
-import { Container } from "../../components/container/container.component"
-import { Button } from "../../components/primitive/button/button.component"
-import { Wave2Top } from "../../components/wave/wave-two-svg/wave-two-top.component"
-import { Wave2Bottom } from "../../components/wave/wave-two-svg/wave-two-bottom.component"
+
 import { YogaIllustration, QuoteImg } from "@/public"
 import Animate from "../../components/animations/animation"
+import { Button, Container, Wave2Bottom, Wave2Top } from "../../components"
 
 export const YogaSection = () => {
     return (

@@ -1,5 +1,3 @@
-import { Container } from "../../components/container/container.component"
-import { Text } from "../../components/primitive/text/text.component"
 import {
     FeatureImg1Back,
     FeatureImg1Front,
@@ -10,6 +8,7 @@ import {
     HeartSvg,
 } from "@/public"
 import styles from "./how-it-work.module.css"
+import { Container, Text } from "../../components"
 import Animate from "../../components/animations/animation"
 
 interface TextProps {

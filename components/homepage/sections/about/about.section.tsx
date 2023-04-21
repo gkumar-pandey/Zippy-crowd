@@ -1,8 +1,7 @@
 import Link from "next/link"
-import { Text } from "../../components"
+import { Container, Text } from "../../components"
 import Animate from "../../components/animations/animation"
 import { LogoImg } from "@/public"
-import { Container } from "../../components/container/container.component"
 
 export const AboutSection = () => {
     return (

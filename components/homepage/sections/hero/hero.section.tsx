@@ -1,14 +1,15 @@
 import Link from "next/link"
 import { useState } from "react"
-
-import { Container } from "../../components/container/container.component"
-import { Wave1Top } from "../../components/wave/wave-one-svg/wave-one-top.component"
-import { Button } from "../../components/primitive/button/button.component"
-import { Modal } from "../../components/primitive/modal/modal.component"
-import { Text } from "../../components/primitive/text/text.component"
-import { YouTubeVideo } from "../../components/primitive/youtube-video/youtube-video.component"
 import { HeroArrowSvg, HeroImg } from "@/public"
 import styles from "./hero.module.css"
+import {
+    Button,
+    Container,
+    Modal,
+    Text,
+    Wave1Top,
+    YouTubeVideo,
+} from "../../components"
 
 export const HeroSection = () => {
     const [isModalOpen, setIsModalOpen] = useState(false)

@@ -1,9 +1,6 @@
 import Link from "next/link"
-import { Container } from "../../components/container/container.component"
-import { Wave3Top } from "../../components/wave/wave-three-svg/wave-three-top.component"
-import { Wave3Bottom } from "../../components/wave/wave-three-svg/wave-three-bottom.component"
-import { Button } from "../../components/primitive/button/button.component"
 import { CtaImg } from "@/public"
+import { Button, Container, Wave3Top } from "../../components"
 import Animate from "../../components/animations/animation"
 
 export const CTA = () => {

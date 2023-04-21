@@ -1,6 +1,5 @@
+import { Container, Text } from "../../components"
 import Animate from "../../components/animations/animation"
-import { Container } from "../../components/container/container.component"
-import { Text } from "../../components/primitive/text/text.component"
 
 export const HowZippyHelpSection = () => {
     return (
