@@ -1,3 +1,4 @@
+import Head from "next/head"
 import { Navbar, Footer } from "./components"
 import {
     HeroSection,
@@ -15,6 +16,9 @@ import {
 export function HomePage() {
     return (
         <div>
+            <Head>
+                <title>ZippyCrowd</title>
+            </Head>
             <Navbar />
             <HeroSection />
             <MemberSection />
